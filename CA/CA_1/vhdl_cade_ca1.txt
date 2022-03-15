@@ -1,0 +1,218 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Create Date:    10:06:56 09/11/2021 
+// Module Name:    mohit_input 
+//////////////////////////////////////////////////////////////////////////////////
+module mohit_input();
+reg A, B, C, D;
+wire Y;
+localparam period = 20;
+
+mohit (A,B,C,D,Y);
+
+initial
+	begin
+	A=0; B=0; C=0; D=0;
+	#period;
+	A=0; B=0; C=0; D=1;
+	#period;
+	A=0; B=0; C=1; D=0;
+	#period;
+	A=0; B=0; C=1; D=1;
+	#period;
+	A=0; B=1; C=0; D=0;
+	#period;
+	A=0; B=1; C=0; D=1;
+	#period;
+	A=0; B=1; C=1; D=0;
+	#period;
+	A=0; B=1; C=1; D=1;
+	#period;
+	A=1; B=0; C=0; D=0;
+	#period;
+	A=1; B=0; C=0; D=1;
+	#period;
+	A=1; B=0; C=1; D=0;
+	#period;
+	A=1; B=0; C=1; D=1;
+	#period;
+	A=1; B=1; C=0; D=0;
+	#period;
+	A=1; B=1; C=0; D=1;
+	#period;
+	A=1; B=1; C=1; D=0;
+	#period;
+	A=1; B=1; C=1; D=1;
+	#period;
+	end
+endmodule
+
+
+
+
+
+
+`timescale 1ns / 1ps
+
+module mohit_tb();
+reg A, B, C, D;
+wire  Y;
+
+mohit ( A, B, C, D, Y);
+initial 
+ begin
+ A=0;
+ forever #5 A=~A;
+ end
+
+ initial 
+ begin
+ B=0;
+ forever #10 B=~B;
+ end
+ 
+ initial 
+ begin
+ C=0;
+ forever #15 C=~C;
+ end
+ 
+ initial 
+ begin
+ D=0;
+ forever #20 D=~D;
+ end
+
+
+endmodule
+
+
+
+
+
+
+
+
+
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Create Date:    10:01:01 09/11/2021 
+// Module Name:    mohit 
+
+module mohit(
+	input wire A, B, C, D,
+	output wire Y
+);
+
+assign Y = (B&C)|(~A & ~B & ~C) | (A & B & ~D) | (~A & ~B ~D);
+endmodule
+
+
+module mohit(A, B, C, D, Y);
+    input wire A, B, C, D,
+	output wire Y
+
+	 wire w1,w2,w3,w4;
+	 not k1(A,a);
+	 not k2(B,b);
+	 not k3(C,c);
+	 not k4(D,d);
+
+	 and o1(w1,A,B,C);
+	 and o2(w2,A,B,D);
+	 and o3(w3,b,c);
+	 and o4(w4,a,b,D);
+	 or o5(y,w1,w2,w3,w4);
+
+endmodule
+
+
+
+
+
+input A, B, C, D,
+output Y
+
+wire w1, w2, w3, w4;
+not p1();
+not p2(b,B);
+not p3(c,C);
+not p4(d,D);
+
+and o1(w1,a,b,c);
+and o2(w2,a,b,d);
+and o3(w3,b,c);
+and o4(w4,a,b,d);
+or o5(Y,w1,w2,w3,w4);
+
+endmodule
+
+
+
+
+
+
+`timescale 1ns / 1ps
+
+module mohit(A, B, C, D, Y);
+    input A;
+    input B;
+    input C;
+    input D;
+    output Y;
+
+ wire w1,w2,w3,w4;
+	 not k1(a,A);
+	 not k2(b,B);
+	 not k3(c,C);
+	 not k4(d,D);
+
+	 and o1(w1,A,B,C);
+	 and o2(w2,A,B,D);
+	 and o3(w3,B,C);
+	 and o4(w4,A,B,D);
+	 or o5(Y,w1,w2,w3,w4);
+
+endmodule
+
+
+`timescale 1ns / 1ps
+
+module mohit(A, B, C, D, Y);
+    input A;
+    input B;
+    input C;
+    input D;
+    output Y;
+
+ wire w1,w2,w3,w4;
+	not k1(a,A);
+	not k2(b,B);
+	not k3(c,C);
+	not k4(d,D);
+	
+	and o1(w3,B,C);
+	and o2(w1,a,b,c);
+	and o3(w2,a,b,d);
+	and o4(w4,A,B,d);
+	
+	or o5(Y,w1,w2,w3,w4);
+
+endmodule
+
+
+not (a, A);
+not (b, B);
+not (c, C);
+not (d, D);
+
+wire w1, w2, w3, w4;
+
+
+
+and (w1,B,C);
+and (w2,~A,~B,~C);
+and (w3,~A,~B,~D);
+and (w4,A,B,~D);
+
+or (Y,w1,w2,w3,w4);

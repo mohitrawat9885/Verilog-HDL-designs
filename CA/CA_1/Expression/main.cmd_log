@@ -1,0 +1,114 @@
+xst -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -ifn main.xst -ofn main.syr
+xst -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -ifn main.xst -ofn main.syr
+xst -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -ifn main.xst -ofn main.syr
+ngdbuild -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -dd _ngo -i -p xa9500xl "main.ngc" main.ngd
+cpldfit -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper main.ngd
+XSLTProcess -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" main_build.xml
+tsim -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise main main.nga
+taengine -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -f main -w --format html1 -l F:/ECE/HDL_Design/CA/CA_1/main_html/tim/timing_report.htm
+hprep6 -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -s IEEE1149 -i main
+xst -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -ifn main.xst -ofn main.syr
+ngdbuild -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -dd _ngo -i -p xa9500xl "main.ngc" main.ngd
+cpldfit -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper main.ngd
+XSLTProcess -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" main_build.xml
+tsim -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise main main.nga
+taengine -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -f main -w --format html1 -l F:/ECE/HDL_Design/CA/CA_1/main_html/tim/timing_report.htm
+hprep6 -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -s IEEE1149 -i main
+xst -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -ifn main.xst -ofn main.syr
+ngdbuild -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -dd _ngo -i -p xa9500xl "main.ngc" main.ngd
+cpldfit -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper main.ngd
+XSLTProcess -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" main_build.xml
+tsim -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise main main.nga
+taengine -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -f main -w --format html1 -l F:/ECE/HDL_Design/CA/CA_1/main_html/tim/timing_report.htm
+hprep6 -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -s IEEE1149 -i main
+xst -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -ifn main.xst -ofn main.syr
+ngdbuild -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -dd _ngo -i -p xa9500xl "main.ngc" main.ngd
+cpldfit -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper main.ngd
+XSLTProcess -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" main_build.xml
+tsim -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise main main.nga
+taengine -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -f main -w --format html1 -l F:/ECE/HDL_Design/CA/CA_1/main_html/tim/timing_report.htm
+hprep6 -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -s IEEE1149 -i main
+xst -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -ifn main.xst -ofn main.syr
+ngdbuild -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -dd _ngo -i -p xa9500xl "main.ngc" main.ngd
+cpldfit -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper main.ngd
+XSLTProcess -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" main_build.xml
+tsim -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise main main.nga
+taengine -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -f main -w --format html1 -l F:/ECE/HDL_Design/CA/CA_1/main_html/tim/timing_report.htm
+hprep6 -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -s IEEE1149 -i main
+xst -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -ifn main.xst -ofn main.syr
+ngdbuild -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -dd _ngo -i -p xa9500xl "main.ngc" main.ngd
+cpldfit -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper main.ngd
+XSLTProcess -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" main_build.xml
+tsim -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise main main.nga
+taengine -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -f main -w --format html1 -l F:/ECE/HDL_Design/CA/CA_1/main_html/tim/timing_report.htm
+hprep6 -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -s IEEE1149 -i main
+xst -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -ifn main.xst -ofn main.syr
+ngdbuild -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -dd _ngo -i -p xa9500xl "main.ngc" main.ngd
+cpldfit -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper main.ngd
+XSLTProcess -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" main_build.xml
+tsim -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise main main.nga
+taengine -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -f main -w --format html1 -l F:/ECE/HDL_Design/CA/CA_1/main_html/tim/timing_report.htm
+hprep6 -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -s IEEE1149 -i main
+xst -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -ifn main.xst -ofn main.syr
+ngdbuild -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -dd _ngo -i -p xa9500xl "main.ngc" main.ngd
+cpldfit -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper main.ngd
+XSLTProcess -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" main_build.xml
+tsim -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise main main.nga
+taengine -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -f main -w --format html1 -l F:/ECE/HDL_Design/CA/CA_1/main_html/tim/timing_report.htm
+hprep6 -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -s IEEE1149 -i main
+xst -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -ifn main.xst -ofn main.syr
+ngdbuild -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -dd _ngo -i -p xa9500xl "main.ngc" main.ngd
+cpldfit -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper main.ngd
+XSLTProcess -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" main_build.xml
+tsim -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise main main.nga
+taengine -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -f main -w --format html1 -l F:/ECE/HDL_Design/CA/CA_1/main_html/tim/timing_report.htm
+hprep6 -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -s IEEE1149 -i main
+xst -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -ifn main.xst -ofn main.syr
+ngdbuild -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -dd _ngo -i -p xa9500xl "main.ngc" main.ngd
+cpldfit -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper main.ngd
+XSLTProcess -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" main_build.xml
+tsim -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise main main.nga
+taengine -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -f main -w --format html1 -l F:/ECE/HDL_Design/CA/CA_1/main_html/tim/timing_report.htm
+hprep6 -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -s IEEE1149 -i main
+xst -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -ifn main.xst -ofn main.syr
+ngdbuild -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -dd _ngo -i -p xa9500xl "main.ngc" main.ngd
+cpldfit -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper main.ngd
+XSLTProcess -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" main_build.xml
+tsim -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise main main.nga
+taengine -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -f main -w --format html1 -l F:/ECE/HDL_Design/CA/CA_1/main_html/tim/timing_report.htm
+hprep6 -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -s IEEE1149 -i main
+xst -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -ifn main.xst -ofn main.syr
+ngdbuild -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -dd _ngo -i -p xa9500xl "main.ngc" main.ngd
+cpldfit -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper main.ngd
+XSLTProcess -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" main_build.xml
+tsim -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise main main.nga
+taengine -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -f main -w --format html1 -l F:/ECE/HDL_Design/CA/CA_1/main_html/tim/timing_report.htm
+hprep6 -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -s IEEE1149 -i main
+xst -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -ifn main.xst -ofn main.syr
+ngdbuild -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -dd _ngo -i -p xa9500xl "main.ngc" main.ngd
+cpldfit -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper main.ngd
+XSLTProcess -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" main_build.xml
+tsim -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise main main.nga
+taengine -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -f main -w --format html1 -l F:/ECE/HDL_Design/CA/CA_1/main_html/tim/timing_report.htm
+hprep6 -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -s IEEE1149 -i main
+xst -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -ifn main.xst -ofn main.syr
+ngdbuild -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -dd _ngo -i -p xa9500xl "main.ngc" main.ngd
+cpldfit -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper main.ngd
+XSLTProcess -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" main_build.xml
+tsim -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise main main.nga
+taengine -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -f main -w --format html1 -l F:/ECE/HDL_Design/CA/CA_1/main_html/tim/timing_report.htm
+hprep6 -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -s IEEE1149 -i main
+xst -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -ifn main.xst -ofn main.syr
+ngdbuild -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -dd _ngo -i -p xa9500xl "main.ngc" main.ngd
+cpldfit -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper main.ngd
+XSLTProcess -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" main_build.xml
+tsim -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise main main.nga
+taengine -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -f main -w --format html1 -l F:/ECE/HDL_Design/CA/CA_1/main_html/tim/timing_report.htm
+hprep6 -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -s IEEE1149 -i main
+xst -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -ifn main.xst -ofn main.syr
+ngdbuild -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -dd _ngo -i -p xa9500xl "main.ngc" main.ngd
+cpldfit -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper main.ngd
+XSLTProcess -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" main_build.xml
+tsim -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise main main.nga
+taengine -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -intstyle ise -f main -w --format html1 -l F:/ECE/HDL_Design/CA/CA_1/main_html/tim/timing_report.htm
+hprep6 -ise "F:/ECE/HDL_Design/CA/CA_1/CA_1.ise" -s IEEE1149 -i main

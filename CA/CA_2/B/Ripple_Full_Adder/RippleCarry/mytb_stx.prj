@@ -1,0 +1,3 @@
+verilog isim_temp "mohit.v"
+verilog isim_temp "mytb.v"
+verilog isim_temp "C:/Xilinx92i/verilog/src/glbl.v"

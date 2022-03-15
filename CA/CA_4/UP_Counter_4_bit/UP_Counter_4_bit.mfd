@@ -1,0 +1,55 @@
+MDF Database:  version 1.0
+MDF_INFO | UP_Counter_4_bit | XA2C32A-6-VQ44
+MACROCELL | 0 | 3 | Q0_MC
+ATTRIBUTES | 2156167938 | 0
+OUTPUTMC | 4 | 0 | 3 | 0 | 2 | 0 | 1 | 0 | 0
+INPUTS | 2 | Q0  | reset
+INPUTMC | 1 | 0 | 3
+INPUTP | 1 | 44
+EQ | 2 | 
+   Q0 := !Q0 & !reset;	// (1 pt, 2 inp)
+   Q0.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 0 | 2 | Q1_MC
+ATTRIBUTES | 2156167938 | 0
+OUTPUTMC | 3 | 0 | 2 | 0 | 1 | 0 | 0
+INPUTS | 3 | Q0  | reset  | Q1
+INPUTMC | 2 | 0 | 3 | 0 | 2
+INPUTP | 1 | 44
+EQ | 3 | 
+   Q1 := Q0 & !reset & !Q1
+	# !Q0 & !reset & Q1;	// (2 pt, 3 inp)
+   Q1.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 0 | 1 | Q2_MC
+ATTRIBUTES | 2151973634 | 0
+OUTPUTMC | 2 | 0 | 1 | 0 | 0
+INPUTS | 4 | reset  | Q2  | Q0  | Q1
+INPUTMC | 3 | 0 | 1 | 0 | 3 | 0 | 2
+INPUTP | 1 | 44
+EQ | 3 | 
+   Q2.T := reset & Q2
+	# Q0 & !reset & Q1;	// (2 pt, 4 inp)
+   Q2.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+MACROCELL | 0 | 0 | Q3_MC
+ATTRIBUTES | 2151973634 | 0
+OUTPUTMC | 1 | 0 | 0
+INPUTS | 5 | reset  | Q3  | Q0  | Q1  | Q2
+INPUTMC | 4 | 0 | 0 | 0 | 3 | 0 | 2 | 0 | 1
+INPUTP | 1 | 44
+EQ | 3 | 
+   Q3.T := reset & Q3
+	# Q0 & !reset & Q1 & Q2;	// (2 pt, 5 inp)
+   Q3.CLK  =  clk;	// GCK	(0 pt, 0 inp)
+GLOBALS | 1 | 2 | clk
+
+PIN | reset | 64 | 16 | LVCMOS18 | 44 | 4 | 0 | 3 | 0 | 2 | 0 | 1 | 0 | 0
+PIN | clk | 4096 | 16 | LVCMOS18 | 10 | 4 | 0 | 3 | 0 | 2 | 0 | 1 | 0 | 0
+PIN | Q0 | 536871040 | 0 | LVCMOS18 | 1
+PIN | Q1 | 536871040 | 0 | LVCMOS18 | 3
+PIN | Q2 | 536871040 | 0 | LVCMOS18 | 4
+PIN | Q3 | 536871040 | 0 | LVCMOS18 | 5

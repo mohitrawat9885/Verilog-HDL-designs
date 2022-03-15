@@ -1,0 +1,36 @@
+ command line:
+   ./Mux_16x1_TB_v_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  49674
+
+Thu Dec 02 14:48:46 2021
+
+Total Line Count : 156
+
+ Elaboration time : 0.015625 sec.
+
+ Estimate current memory usage : 158.421 Meg. 
+
+ Total Signals          : 28
+ Total Nets             : 33
+ Total Signal Drivers   : 10
+ Total Blocks           : 8
+ Total Primitive Blocks : 6
+ Total Processes        : 13
+ Total Traceable Variables  : 19
+ Total Scalar Nets and Variables : 132
+ntrace select -o on -n /Mux_16x1_TB_v/O 
+ntrace select -o on -n /Mux_16x1_TB_v/S 
+ntrace select -o on -n /Mux_16x1_TB_v/I 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Simulation time 0.046875 sec.
+
+ Estimate current memory usage : 170.967 Meg. 
+
+Thu Dec 02 14:49:28 2021
+

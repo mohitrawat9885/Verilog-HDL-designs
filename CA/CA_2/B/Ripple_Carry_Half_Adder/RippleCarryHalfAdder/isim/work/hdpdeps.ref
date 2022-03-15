@@ -1,0 +1,16 @@
+V3 11
+FL $XILINX/verilog/src/glbl.v 2007/05/19.02:52:56 J.36
+MO work/glbl FL $XILINX/verilog/src/glbl.v
+FL F:/ECE/HDL_Design/CA/CA_2/B/Ripple_Carry_Half_Adder/RippleCarryHalfAdder/mohit.v 2021/09/28.19:01:14 J.36
+MO work/Half_Adder \
+      FL F:/ECE/HDL_Design/CA/CA_2/B/Ripple_Carry_Half_Adder/RippleCarryHalfAdder/mohit.v
+MO work/Full_Adder \
+      FL F:/ECE/HDL_Design/CA/CA_2/B/Ripple_Carry_Half_Adder/RippleCarryHalfAdder/mohit.v \
+      MI Half_Adder
+MO work/mohit \
+      FL F:/ECE/HDL_Design/CA/CA_2/B/Ripple_Carry_Half_Adder/RippleCarryHalfAdder/mohit.v \
+      MI Full_Adder
+FL F:/ECE/HDL_Design/CA/CA_2/B/Ripple_Carry_Half_Adder/RippleCarryHalfAdder/myTB.v 2021/09/28.19:03:39 J.36
+MO work/myTB \
+      FL F:/ECE/HDL_Design/CA/CA_2/B/Ripple_Carry_Half_Adder/RippleCarryHalfAdder/myTB.v \
+      MI mohit

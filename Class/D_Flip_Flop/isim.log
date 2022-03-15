@@ -1,0 +1,37 @@
+ command line:
+   ./D_FF_TB_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  63414
+
+Thu Oct 28 14:54:53 2021
+
+Total Line Count : 54
+
+ Elaboration time : 0.046875 sec.
+
+ Estimate current memory usage : 157.667 Meg. 
+
+ Total Signals          : 13
+ Total Nets             : 12
+ Total Signal Drivers   : 7
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 12
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 94
+ntrace select -o on -n /D_FF_TB/Q 
+ntrace select -o on -n /D_FF_TB/clk 
+ntrace select -o on -n /D_FF_TB/rst 
+ntrace select -o on -n /D_FF_TB/D 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Simulation time 0.109375 sec.
+
+ Estimate current memory usage : 163.303 Meg. 
+
+Thu Oct 28 15:10:32 2021
+

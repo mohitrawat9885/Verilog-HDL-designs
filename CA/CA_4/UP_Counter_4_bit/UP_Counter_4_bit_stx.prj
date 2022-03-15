@@ -1,0 +1,2 @@
+verilog isim_temp "UP_Counter_4_bit.v"
+verilog isim_temp "C:/Xilinx92i/verilog/src/glbl.v"

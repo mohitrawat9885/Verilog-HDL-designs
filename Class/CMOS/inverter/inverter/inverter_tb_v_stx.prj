@@ -1,0 +1,3 @@
+verilog isim_temp "inverter.v"
+verilog isim_temp "inverter_tb.v"
+verilog isim_temp "C:/Xilinx92i/verilog/src/glbl.v"

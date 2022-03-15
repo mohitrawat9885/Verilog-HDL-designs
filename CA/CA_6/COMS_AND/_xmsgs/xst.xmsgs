@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="863" delta="unknown" >&quot;<arg fmt="%s" index="1">CMOS_AND.v</arg>&quot; line <arg fmt="%d" index="2">18</arg>: Name conflict (<arg fmt="%s" index="3">&lt;O2&gt; and &lt;o2&gt;, renaming O2 as o2_rnm0</arg>).
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="unknown" >&quot;<arg fmt="%s" index="1">CMOS_AND.v</arg>&quot; line <arg fmt="%d" index="2">13</arg>: Unsupported <arg fmt="%s" index="3">Switch or User Defined Primitive</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="unknown" >&quot;<arg fmt="%s" index="1">CMOS_AND.v</arg>&quot; line <arg fmt="%d" index="2">14</arg>: Unsupported <arg fmt="%s" index="3">Switch or User Defined Primitive</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="unknown" >&quot;<arg fmt="%s" index="1">CMOS_AND.v</arg>&quot; line <arg fmt="%d" index="2">15</arg>: Unsupported <arg fmt="%s" index="3">Switch or User Defined Primitive</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="unknown" >&quot;<arg fmt="%s" index="1">CMOS_AND.v</arg>&quot; line <arg fmt="%d" index="2">18</arg>: Unsupported <arg fmt="%s" index="3">Switch or User Defined Primitive</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="unknown" >&quot;<arg fmt="%s" index="1">CMOS_AND.v</arg>&quot; line <arg fmt="%d" index="2">19</arg>: Unsupported <arg fmt="%s" index="3">Switch or User Defined Primitive</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="unknown" >&quot;<arg fmt="%s" index="1">CMOS_AND.v</arg>&quot; line <arg fmt="%d" index="2">20</arg>: Unsupported <arg fmt="%s" index="3">Switch or User Defined Primitive</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="unknown" >&quot;<arg fmt="%s" index="1">CMOS_AND.v</arg>&quot; line <arg fmt="%d" index="2">22</arg>: Unsupported <arg fmt="%s" index="3">Switch or User Defined Primitive</arg>. 
+</msg>
+
+<msg type="error" file="Xst" num="850" delta="unknown" >&quot;<arg fmt="%s" index="1">CMOS_AND.v</arg>&quot; line <arg fmt="%d" index="2">23</arg>: Unsupported <arg fmt="%s" index="3">Switch or User Defined Primitive</arg>. 
+</msg>
+
+</messages>
+

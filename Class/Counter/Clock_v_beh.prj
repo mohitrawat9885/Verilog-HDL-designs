@@ -1,0 +1,3 @@
+verilog work "synchronous_counter.v"
+verilog work "Clock.v"
+verilog work "C:/Xilinx92i/verilog/src/glbl.v"

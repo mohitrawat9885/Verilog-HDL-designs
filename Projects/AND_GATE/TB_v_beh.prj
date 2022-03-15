@@ -1,0 +1,3 @@
+verilog work "AND_GATE.v"
+verilog work "TB.v"
+verilog work "C:/Xilinx92i/verilog/src/glbl.v"

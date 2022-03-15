@@ -1,0 +1,8 @@
+V3 7
+FL $XILINX/verilog/src/glbl.v 2007/05/19.02:52:56 J.36
+MO isim_temp/glbl FL $XILINX/verilog/src/glbl.v
+FL F:/ECE/HDL_Design/Projects/NAND_GATE/NAND_GATE.v 2021/10/31.20:13:45 J.36
+MO isim_temp/NAND_GATE FL F:/ECE/HDL_Design/Projects/NAND_GATE/NAND_GATE.v
+FL F:/ECE/HDL_Design/Projects/NAND_GATE/NAND_TB.v 2021/10/31.20:16:55 J.36
+MO isim_temp/NAND_TB FL F:/ECE/HDL_Design/Projects/NAND_GATE/NAND_TB.v \
+      MI NAND_GATE

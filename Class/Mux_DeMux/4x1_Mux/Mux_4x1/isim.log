@@ -1,0 +1,36 @@
+ command line:
+   ./Mux_4x1_TB_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  53094
+
+Sat Oct 30 13:43:10 2021
+
+Total Line Count : 67
+
+ Elaboration time : 0 sec.
+
+ Estimate current memory usage : 158.085 Meg. 
+
+ Total Signals          : 12
+ Total Nets             : 15
+ Total Signal Drivers   : 6
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 9
+ Total Traceable Variables  : 19
+ Total Scalar Nets and Variables : 100
+ntrace select -o on -n /Mux_4x1_TB/Y 
+ntrace select -o on -n /Mux_4x1_TB/I 
+ntrace select -o on -n /Mux_4x1_TB/S 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Simulation time 0.109375 sec.
+
+ Estimate current memory usage : 163.721 Meg. 
+
+Sat Oct 30 14:50:56 2021
+

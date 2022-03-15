@@ -1,0 +1,56 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2007 Xilinx, Inc.
+// All Right Reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 9.2i
+//  \   \         Application : ISE
+//  /   /         Filename : mytb.tfw
+// /___/   /\     Timestamp : Sun Oct 31 20:36:54 2021
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: 
+//Design Name: mytb
+//Device: Xilinx
+//
+`timescale 1ns/1ps
+
+module mytb;
+    reg A = 1'b0;
+    reg B = 1'b0;
+    wire S;
+    wire C;
+
+    parameter PERIOD = 200;
+    parameter real DUTY_CYCLE = 0.5;
+    parameter OFFSET = 100;
+
+    initial    // Clock process for A
+    begin
+        #OFFSET;
+        forever
+        begin
+            A = 1'b0;
+            #(PERIOD-(PERIOD*DUTY_CYCLE)) A = 1'b1;
+            #(PERIOD*DUTY_CYCLE);
+        end
+    end
+
+    Hald_Adder UUT (
+        .A(A),
+        .B(B),
+        .S(S),
+        .C(C));
+
+    initial begin
+        // -------------  Current Time:  185ns
+        #185;
+        B = 1'b1;
+        // -------------------------------------
+    end
+
+endmodule
+

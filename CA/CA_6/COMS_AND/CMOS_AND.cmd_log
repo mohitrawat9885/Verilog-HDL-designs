@@ -1,0 +1,1 @@
+xst -ise "Z:/ECE/HDL_Design/CA/CA_6/COMS_AND/COMS_AND.ise" -intstyle ise -ifn CMOS_AND.xst -ofn CMOS_AND.syr

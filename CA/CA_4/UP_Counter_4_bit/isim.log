@@ -1,0 +1,39 @@
+ command line:
+   ./Clock_v_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  54864
+
+Tue Nov 02 16:12:11 2021
+
+Total Line Count : 85
+
+ Elaboration time : 0.015625 sec.
+
+ Estimate current memory usage : 157.856 Meg. 
+
+ Total Signals          : 51
+ Total Nets             : 27
+ Total Signal Drivers   : 18
+ Total Blocks           : 7
+ Total Primitive Blocks : 5
+ Total Processes        : 22
+ Total Traceable Variables  : 19
+ Total Scalar Nets and Variables : 108
+ntrace select -o on -n /Clock_v/Q0 
+ntrace select -o on -n /Clock_v/Q1 
+ntrace select -o on -n /Clock_v/Q2 
+ntrace select -o on -n /Clock_v/Q3 
+ntrace select -o on -n /Clock_v/clk 
+ntrace select -o on -n /Clock_v/reset 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Simulation time 0.109375 sec.
+
+ Estimate current memory usage : 163.492 Meg. 
+
+Tue Nov 02 16:31:14 2021
+

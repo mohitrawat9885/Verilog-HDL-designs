@@ -1,0 +1,3 @@
+verilog work "inverter.v"
+verilog work "inverter_tb.v"
+verilog work "C:/Xilinx92i/verilog/src/glbl.v"

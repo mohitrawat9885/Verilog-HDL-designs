@@ -1,0 +1,8 @@
+V3 7
+FL $XILINX/verilog/src/glbl.v 2007/05/19.02:52:56 J.36
+MO work/glbl FL $XILINX/verilog/src/glbl.v
+FL D:/ECE/HDL_Design/Class/CMOS/inverter/inverter/inverter.v 2021/11/15.09:20:04 J.36
+MO work/inverter FL D:/ECE/HDL_Design/Class/CMOS/inverter/inverter/inverter.v
+FL D:/ECE/HDL_Design/Class/CMOS/inverter/inverter/inverter_tb.v 2021/11/15.09:21:31 J.36
+MO work/inverter_tb_v \
+      FL D:/ECE/HDL_Design/Class/CMOS/inverter/inverter/inverter_tb.v MI inverter

@@ -1,0 +1,3 @@
+verilog isim_temp "D_Flip_Flop.v"
+verilog isim_temp "D_FF_TB.v"
+verilog isim_temp "C:/Xilinx92i/verilog/src/glbl.v"

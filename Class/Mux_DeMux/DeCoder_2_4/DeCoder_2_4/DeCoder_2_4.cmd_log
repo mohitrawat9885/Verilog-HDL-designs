@@ -1,0 +1,7 @@
+xst -ise "F:/ECE/HDL_Design/Class/Mux_DeMux/DeCoder_2_4/DeCoder_2_4/DeCoder_2_4.ise" -intstyle ise -ifn DeCoder_2_4.xst -ofn DeCoder_2_4.syr
+ngdbuild -ise "F:/ECE/HDL_Design/Class/Mux_DeMux/DeCoder_2_4/DeCoder_2_4/DeCoder_2_4.ise" -intstyle ise -dd _ngo -i -p acr2 "DeCoder_2_4.ngc" DeCoder_2_4.ngd
+cpldfit -ise "F:/ECE/HDL_Design/Class/Mux_DeMux/DeCoder_2_4/DeCoder_2_4/DeCoder_2_4.ise" -intstyle ise -p xa2c*-*-* -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -inreg on -blkfanin 38 -pterms 28 -iostd LVCMOS18 -unused keeper -terminate keeper DeCoder_2_4.ngd
+XSLTProcess -ise "F:/ECE/HDL_Design/Class/Mux_DeMux/DeCoder_2_4/DeCoder_2_4/DeCoder_2_4.ise" DeCoder_2_4_build.xml
+tsim -ise "F:/ECE/HDL_Design/Class/Mux_DeMux/DeCoder_2_4/DeCoder_2_4/DeCoder_2_4.ise" -intstyle ise DeCoder_2_4 DeCoder_2_4.nga
+taengine -ise "F:/ECE/HDL_Design/Class/Mux_DeMux/DeCoder_2_4/DeCoder_2_4/DeCoder_2_4.ise" -intstyle ise -f DeCoder_2_4 -w --format html1 -l F:/ECE/HDL_Design/Class/Mux_DeMux/DeCoder_2_4/DeCoder_2_4/DeCoder_2_4_html/tim/timing_report.htm
+hprep6 -ise "F:/ECE/HDL_Design/Class/Mux_DeMux/DeCoder_2_4/DeCoder_2_4/DeCoder_2_4.ise" -s IEEE1149 -i DeCoder_2_4

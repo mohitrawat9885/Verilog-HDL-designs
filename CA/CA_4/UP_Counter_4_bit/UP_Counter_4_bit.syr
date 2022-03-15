@@ -1,0 +1,209 @@
+Release 9.2i - xst J.36
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.39 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.39 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: UP_Counter_4_bit.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "UP_Counter_4_bit.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "UP_Counter_4_bit"
+Output Format                      : NGC
+Target Device                      : Automotive CoolRunner2
+
+---- Source Options
+Top Module Name                    : UP_Counter_4_bit
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : UP_Counter_4_bit.lso
+Keep Hierarchy                     : YES
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "UP_Counter_4_bit.v" in library work
+Module <D_Flip_Flop> compiled
+Module <UP_Counter_4_bit> compiled
+No errors in compilation
+Analysis of file <"UP_Counter_4_bit.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <UP_Counter_4_bit> in library <work>.
+
+Analyzing hierarchy for module <D_Flip_Flop> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <UP_Counter_4_bit>.
+Module <UP_Counter_4_bit> is correct for synthesis.
+ 
+Analyzing module <D_Flip_Flop> in library <work>.
+Module <D_Flip_Flop> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <D_Flip_Flop>.
+    Related source file is "UP_Counter_4_bit.v".
+    Found 1-bit register for signal <Q>.
+Unit <D_Flip_Flop> synthesized.
+
+
+Synthesizing Unit <UP_Counter_4_bit>.
+    Related source file is "UP_Counter_4_bit.v".
+WARNING:Xst:646 - Signal <Q1_bar> is assigned but never used.
+WARNING:Xst:1780 - Signal <Q0_b> is never used or assigned.
+WARNING:Xst:1780 - Signal <Q1_b> is never used or assigned.
+WARNING:Xst:646 - Signal <Q2_bar> is assigned but never used.
+WARNING:Xst:1780 - Signal <Q2_b> is never used or assigned.
+WARNING:Xst:1780 - Signal <Q3_b> is never used or assigned.
+WARNING:Xst:646 - Signal <Q3_bar> is assigned but never used.
+    Found 1-bit xor2 for signal <d1>.
+    Found 1-bit xor2 for signal <d2>.
+    Found 1-bit xor2 for signal <d3>.
+    Summary:
+	inferred   3 Xor(s).
+Unit <UP_Counter_4_bit> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 4
+ 1-bit register                                        : 4
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 4
+ Flip-Flops                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <UP_Counter_4_bit> ...
+
+Optimizing unit <D_Flip_Flop> ...
+
+=========================================================================
+*                          Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : UP_Counter_4_bit.ngr
+Top Level Output File Name         : UP_Counter_4_bit
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : YES
+Target Technology                  : Automotive CoolRunner2
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 6
+
+Cell Usage :
+# BELS                             : 13
+#      AND2                        : 5
+#      AND3                        : 1
+#      INV                         : 4
+#      XOR2                        : 3
+# FlipFlops/Latches                : 4
+#      FD                          : 4
+# IO Buffers                       : 6
+#      IBUF                        : 2
+#      OBUF                        : 4
+=========================================================================
+CPU : 3.33 / 3.72 s | Elapsed : 3.00 / 3.00 s
+ 
+--> 
+
+Total memory usage is 189676 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    7 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

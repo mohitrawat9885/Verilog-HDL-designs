@@ -1,0 +1,3 @@
+verilog work "D_Flip_Flop.v"
+verilog work "D_FF_TB.v"
+verilog work "C:/Xilinx92i/verilog/src/glbl.v"

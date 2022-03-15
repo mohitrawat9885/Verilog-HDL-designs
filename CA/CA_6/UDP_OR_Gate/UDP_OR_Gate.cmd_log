@@ -1,0 +1,2 @@
+xst -ise "Z:/ECE/HDL_Design/CA/CA_6/UDP_OR_Gate/UDP_OR_Gate.ise" -intstyle ise -ifn UDP_OR_Gate.xst -ofn UDP_OR_Gate.syr
+xst -ise "Z:/ECE/HDL_Design/CA/CA_6/UDP_OR_Gate/UDP_OR_Gate.ise" -intstyle ise -ifn UDP_OR_Gate.xst -ofn UDP_OR_Gate.syr

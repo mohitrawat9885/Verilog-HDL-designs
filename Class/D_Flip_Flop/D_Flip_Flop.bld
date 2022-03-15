@@ -1,0 +1,29 @@
+Release 9.2i ngdbuild J.36
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx92i\bin\nt\ngdbuild.exe -ise
+F:/ECE/HDL_Design/Class/D_Flip_Flop/D_Flip_Flop.ise -intstyle ise -dd _ngo -i -p
+acr2 D_Flip_Flop.ngc D_Flip_Flop.ngd
+
+Reading NGO file "F:/ECE/HDL_Design/Class/D_Flip_Flop/D_Flip_Flop.ngc" ...
+
+Checking timing specifications ...
+Checking Partitions ...
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 106620 kilobytes
+
+Writing NGD file "D_Flip_Flop.ngd" ...
+
+Writing NGDBUILD log file "D_Flip_Flop.bld"...

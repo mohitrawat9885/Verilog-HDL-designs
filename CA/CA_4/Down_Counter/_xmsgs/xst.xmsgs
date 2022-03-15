@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLCompilers" num="246" delta="unknown" ><arg fmt="%s" index="1">&quot;Down_Counter.v&quot; line 28 </arg>Reference to <arg fmt="%s" index="2">scalar reg &apos;QA&apos;</arg> is not a legal net lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="102" delta="unknown" ><arg fmt="%s" index="1">&quot;Down_Counter.v&quot; line 28 </arg>Connection to output port &apos;<arg fmt="%s" index="2">Q</arg>&apos; must be a net lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="246" delta="unknown" ><arg fmt="%s" index="1">&quot;Down_Counter.v&quot; line 29 </arg>Reference to <arg fmt="%s" index="2">scalar reg &apos;QB&apos;</arg> is not a legal net lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="102" delta="unknown" ><arg fmt="%s" index="1">&quot;Down_Counter.v&quot; line 29 </arg>Connection to output port &apos;<arg fmt="%s" index="2">Q</arg>&apos; must be a net lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="246" delta="unknown" ><arg fmt="%s" index="1">&quot;Down_Counter.v&quot; line 30 </arg>Reference to <arg fmt="%s" index="2">scalar reg &apos;QC&apos;</arg> is not a legal net lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="102" delta="unknown" ><arg fmt="%s" index="1">&quot;Down_Counter.v&quot; line 30 </arg>Connection to output port &apos;<arg fmt="%s" index="2">Q</arg>&apos; must be a net lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="246" delta="unknown" ><arg fmt="%s" index="1">&quot;Down_Counter.v&quot; line 31 </arg>Reference to <arg fmt="%s" index="2">scalar reg &apos;QD&apos;</arg> is not a legal net lvalue
+</msg>
+
+<msg type="error" file="HDLCompilers" num="102" delta="unknown" ><arg fmt="%s" index="1">&quot;Down_Counter.v&quot; line 31 </arg>Connection to output port &apos;<arg fmt="%s" index="2">Q</arg>&apos; must be a net lvalue
+</msg>
+
+</messages>
+

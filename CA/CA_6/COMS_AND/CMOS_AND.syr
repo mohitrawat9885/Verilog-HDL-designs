@@ -1,0 +1,106 @@
+Release 9.2i - xst J.36
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.16 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.16 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: CMOS_AND.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "CMOS_AND.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "CMOS_AND"
+Output Format                      : NGC
+Target Device                      : Automotive 9500XL
+
+---- Source Options
+Top Module Name                    : CMOS_AND
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : CMOS_AND.lso
+Keep Hierarchy                     : YES
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "CMOS_AND.v" in library work
+Module <CMOS_AND> compiled
+No errors in compilation
+Analysis of file <"CMOS_AND.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <CMOS_AND> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <CMOS_AND>.
+WARNING:Xst:863 - "CMOS_AND.v" line 18: Name conflict (<O2> and <o2>, renaming O2 as o2_rnm0).
+ERROR:Xst:850 - "CMOS_AND.v" line 13: Unsupported Switch or User Defined Primitive. 
+ERROR:Xst:850 - "CMOS_AND.v" line 14: Unsupported Switch or User Defined Primitive. 
+ERROR:Xst:850 - "CMOS_AND.v" line 15: Unsupported Switch or User Defined Primitive. 
+ERROR:Xst:850 - "CMOS_AND.v" line 18: Unsupported Switch or User Defined Primitive. 
+ERROR:Xst:850 - "CMOS_AND.v" line 19: Unsupported Switch or User Defined Primitive. 
+ERROR:Xst:850 - "CMOS_AND.v" line 20: Unsupported Switch or User Defined Primitive. 
+ERROR:Xst:850 - "CMOS_AND.v" line 22: Unsupported Switch or User Defined Primitive. 
+ERROR:Xst:850 - "CMOS_AND.v" line 23: Unsupported Switch or User Defined Primitive. 
+ 
+Found 8 error(s). Aborting synthesis.
+--> 
+
+Total memory usage is 188612 kilobytes
+
+Number of errors   :    8 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

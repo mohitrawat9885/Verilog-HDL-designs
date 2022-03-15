@@ -1,0 +1,246 @@
+NDS Database:  version J.36
+
+NDS_INFO | acr2 | A2C32A44VQ | XA2C32A-6-VQ44
+
+DEVICE | A2C32A | A2C32A44VQ | 
+
+NETWORK | UP_Counter_4_bit | 0 | 0 | 1073758214
+
+MACROCELL_INSTANCE | PrldLow | Q0_MC | UP_Counter_4_bit_COPY_0_COPY_0 | 1024 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q0_MC.UIM | 419 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | Q0_MC.Q | Q0_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reset_II/UIM | 421 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | NULL | reset_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_II/FCLK | 423 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | NULL | clk_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Q0_MC.Q | 424 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | Q0_MC.Q | Q0_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Q0_MC.UIM | 419 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | Q0_MC.Q | Q0_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Q0_MC.SI | Q0_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q0_MC.UIM | 419 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | Q0_MC.Q | Q0_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reset_II/UIM | 421 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | NULL | reset_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Q0_MC.D1 | 416 | ? | 0 | 0 | Q0_MC | NULL | NULL | Q0_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_FALSE | Q0_MC.UIM | IV_FALSE | reset_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Q0_MC.D2 | 417 | ? | 0 | 0 | Q0_MC | NULL | NULL | Q0_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | Q0_MC.REG | Q0_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Q0_MC.D | 415 | ? | 0 | 0 | Q0_MC | NULL | NULL | Q0_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_II/FCLK | 423 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | NULL | clk_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Q0_MC.Q | 418 | ? | 0 | 0 | Q0_MC | NULL | NULL | Q0_MC.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | reset_II | UP_Counter_4_bit_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | reset | 420 | PI | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | reset_II/UIM | 421 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | NULL | reset_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | clk_II | UP_Counter_4_bit_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | clk | 422 | PI | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 3 | 5 | II_FCLK
+NODE | clk_II/FCLK | 423 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | NULL | clk_II | 3 | 5 | II_FCLK
+
+OUTPUT_INSTANCE | 0 | Q0 | UP_Counter_4_bit_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Q0_MC.Q | 424 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | Q0_MC.Q | Q0_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Q0 | 425 | PO | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | NULL | Q0 | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | PrldLow | Q1_MC | UP_Counter_4_bit_COPY_0_COPY_0 | 1024 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q0_MC.UIM | 419 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | Q0_MC.Q | Q0_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reset_II/UIM | 421 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | NULL | reset_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q1_MC.UIM | 430 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | Q1_MC.Q | Q1_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_II/FCLK | 423 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | NULL | clk_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Q1_MC.Q | 431 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | Q1_MC.Q | Q1_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Q1_MC.UIM | 430 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | Q1_MC.Q | Q1_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Q1_MC.SI | Q1_MC | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q0_MC.UIM | 419 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | Q0_MC.Q | Q0_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reset_II/UIM | 421 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | NULL | reset_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q1_MC.UIM | 430 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | Q1_MC.Q | Q1_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Q1_MC.D1 | 428 | ? | 0 | 0 | Q1_MC | NULL | NULL | Q1_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Q1_MC.D2 | 427 | ? | 0 | 0 | Q1_MC | NULL | NULL | Q1_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | Q0_MC.UIM | IV_FALSE | reset_II/UIM | IV_FALSE | Q1_MC.UIM
+SPPTERM | 3 | IV_FALSE | Q0_MC.UIM | IV_FALSE | reset_II/UIM | IV_TRUE | Q1_MC.UIM
+
+SRFF_INSTANCE | Q1_MC.REG | Q1_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Q1_MC.D | 426 | ? | 0 | 0 | Q1_MC | NULL | NULL | Q1_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_II/FCLK | 423 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | NULL | clk_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Q1_MC.Q | 429 | ? | 0 | 0 | Q1_MC | NULL | NULL | Q1_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | Q1 | UP_Counter_4_bit_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Q1_MC.Q | 431 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | Q1_MC.Q | Q1_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Q1 | 432 | PO | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | NULL | Q1 | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | PrldLow+Tff | Q2_MC | UP_Counter_4_bit_COPY_0_COPY_0 | 5120 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reset_II/UIM | 421 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | NULL | reset_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q2_MC.UIM | 437 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | Q2_MC.Q | Q2_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q0_MC.UIM | 419 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | Q0_MC.Q | Q0_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q1_MC.UIM | 430 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | Q1_MC.Q | Q1_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_II/FCLK | 423 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | NULL | clk_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Q2_MC.Q | 438 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | Q2_MC.Q | Q2_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Q2_MC.UIM | 437 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | Q2_MC.Q | Q2_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Q2_MC.SI | Q2_MC | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reset_II/UIM | 421 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | NULL | reset_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q2_MC.UIM | 437 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | Q2_MC.Q | Q2_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q0_MC.UIM | 419 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | Q0_MC.Q | Q0_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q1_MC.UIM | 430 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | Q1_MC.Q | Q1_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Q2_MC.D1 | 435 | ? | 0 | 0 | Q2_MC | NULL | NULL | Q2_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Q2_MC.D2 | 434 | ? | 0 | 0 | Q2_MC | NULL | NULL | Q2_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | reset_II/UIM | IV_TRUE | Q2_MC.UIM
+SPPTERM | 3 | IV_TRUE | Q0_MC.UIM | IV_FALSE | reset_II/UIM | IV_TRUE | Q1_MC.UIM
+
+SRFF_INSTANCE | Q2_MC.REG | Q2_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Q2_MC.D | 433 | ? | 0 | 0 | Q2_MC | NULL | NULL | Q2_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_II/FCLK | 423 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | NULL | clk_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Q2_MC.Q | 436 | ? | 0 | 0 | Q2_MC | NULL | NULL | Q2_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | Q2 | UP_Counter_4_bit_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Q2_MC.Q | 438 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | Q2_MC.Q | Q2_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Q2 | 439 | PO | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | NULL | Q2 | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | PrldLow+Tff | Q3_MC | UP_Counter_4_bit_COPY_0_COPY_0 | 5120 | 6 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reset_II/UIM | 421 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | NULL | reset_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q3_MC.UIM | 444 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | Q3_MC.Q | Q3_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q0_MC.UIM | 419 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | Q0_MC.Q | Q0_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q1_MC.UIM | 430 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | Q1_MC.Q | Q1_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q2_MC.UIM | 437 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | Q2_MC.Q | Q2_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | clk_II/FCLK | 423 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | NULL | clk_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Q3_MC.Q | 445 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | Q3_MC.Q | Q3_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | Q3_MC.UIM | 444 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | Q3_MC.Q | Q3_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | Q3_MC.SI | Q3_MC | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reset_II/UIM | 421 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | NULL | reset_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q3_MC.UIM | 444 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | Q3_MC.Q | Q3_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q0_MC.UIM | 419 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | Q0_MC.Q | Q0_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q1_MC.UIM | 430 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | Q1_MC.Q | Q1_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | Q2_MC.UIM | 437 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | Q2_MC.Q | Q2_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Q3_MC.D1 | 442 | ? | 0 | 0 | Q3_MC | NULL | NULL | Q3_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Q3_MC.D2 | 441 | ? | 0 | 0 | Q3_MC | NULL | NULL | Q3_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | reset_II/UIM | IV_TRUE | Q3_MC.UIM
+SPPTERM | 4 | IV_TRUE | Q0_MC.UIM | IV_FALSE | reset_II/UIM | IV_TRUE | Q1_MC.UIM | IV_TRUE | Q2_MC.UIM
+
+SRFF_INSTANCE | Q3_MC.REG | Q3_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Q3_MC.D | 440 | ? | 0 | 0 | Q3_MC | NULL | NULL | Q3_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | clk_II/FCLK | 423 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | NULL | clk_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Q3_MC.Q | 443 | ? | 0 | 0 | Q3_MC | NULL | NULL | Q3_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | Q3 | UP_Counter_4_bit_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Q3_MC.Q | 445 | ? | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | Q3_MC.Q | Q3_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Q3 | 446 | PO | 0 | 0 | UP_Counter_4_bit_COPY_0_COPY_0 | NULL | NULL | Q3 | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | UP_Counter_4_bit_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | Q3_MC | 1 | NULL | 0 | Q3 | 1 | 38 | 49152
+FBPIN | 2 | Q2_MC | 1 | NULL | 0 | Q2 | 1 | 37 | 49152
+FBPIN | 3 | Q1_MC | 1 | NULL | 0 | Q1 | 1 | 36 | 49152
+FBPIN | 4 | Q0_MC | 1 | NULL | 0 | Q0 | 1 | 34 | 53248
+FBPIN | 5 | NULL | 0 | reset_II | 1 | NULL | 0 | 33 | 53248
+
+FB_INSTANCE | FOOBAR2_ | UP_Counter_4_bit_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 5 | NULL | 0 | clk_II | 1 | NULL | 0 | 43 | 57344
+
+FB_INSTANCE | INPUTPINS_FOOBAR3_ | UP_Counter_4_bit_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR1_ | FOOBAR1__ctinst | UP_Counter_4_bit_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR2_ | FOOBAR2__ctinst | UP_Counter_4_bit_COPY_0_COPY_0 | 0 | 0 | 0
+
+PLA | FOOBAR1_ | 7
+PLA_TERM | 0 | 
+SPPTERM | 3 | IV_FALSE | Q0_MC.UIM | IV_FALSE | reset_II/UIM | IV_TRUE | Q1_MC.UIM
+PLA_TERM | 1 | 
+SPPTERM | 3 | IV_TRUE | Q0_MC.UIM | IV_FALSE | reset_II/UIM | IV_FALSE | Q1_MC.UIM
+PLA_TERM | 2 | 
+SPPTERM | 2 | IV_TRUE | reset_II/UIM | IV_TRUE | Q2_MC.UIM
+PLA_TERM | 3 | 
+SPPTERM | 3 | IV_TRUE | Q0_MC.UIM | IV_FALSE | reset_II/UIM | IV_TRUE | Q1_MC.UIM
+PLA_TERM | 4 | 
+SPPTERM | 4 | IV_TRUE | Q0_MC.UIM | IV_FALSE | reset_II/UIM | IV_TRUE | Q1_MC.UIM | IV_TRUE | Q2_MC.UIM
+PLA_TERM | 5 | 
+SPPTERM | 2 | IV_TRUE | reset_II/UIM | IV_TRUE | Q3_MC.UIM
+PLA_TERM | 19 | 
+SPPTERM | 2 | IV_FALSE | Q0_MC.UIM | IV_FALSE | reset_II/UIM
+
+
+IOSTD | LVCMOS18
+reset | LVCMOS18
+clk | LVCMOS18
+Q0 | LVCMOS18
+Q1 | LVCMOS18
+Q2 | LVCMOS18
+Q3 | LVCMOS18
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 0 | Q2_MC.UIM | NULL | 2 | Q1_MC.UIM | NULL | 4 | reset | 33 | 6 | Q3_MC.UIM | NULL | 10 | Q0_MC.UIM | NULL
+
+FB_IMUX_INDEX | FOOBAR1_ | 34 | -1 | 35 | -1 | 4 | -1 | 33 | -1 | -1 | -1 | 36 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+GLOBAL_FCLK | clk | 0 | 0

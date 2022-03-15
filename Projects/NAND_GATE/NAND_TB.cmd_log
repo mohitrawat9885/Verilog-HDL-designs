@@ -1,0 +1,1 @@
+xst -ise "F:/ECE/HDL_Design/Projects/NAND_GATE/NAND_GATE.ise" -intstyle ise -ifn NAND_TB.xst -ofn NAND_TB.syr

@@ -1,0 +1,11 @@
+MDF Database:  version 1.0
+MDF_INFO | inverter | XA9536XL-15-VQ44
+MACROCELL | 0 | 1 | o1_OBUF
+ATTRIBUTES | 264963 | 0
+INPUTS | 1 | i1
+INPUTP | 1 | 44
+EQ | 1 | 
+   o1 = !i1;
+
+PIN | i1 | 64 | 0 | N/A | 44 | 1 | 0 | 1
+PIN | o1 | 536871040 | 0 | N/A | 8

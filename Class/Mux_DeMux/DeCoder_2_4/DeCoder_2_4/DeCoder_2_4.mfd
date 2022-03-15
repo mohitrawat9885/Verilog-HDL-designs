@@ -1,0 +1,36 @@
+MDF Database:  version 1.0
+MDF_INFO | DeCoder_2_4 | XA2C32A-6-VQ44
+MACROCELL | 0 | 0 | Y<0>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | I<1>  | I<0>
+INPUTP | 2 | 43 | 44
+EQ | 1 | 
+   Y<0> = !I<1> & !I<0>;	// (1 pt, 2 inp)
+
+MACROCELL | 0 | 1 | Y<1>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | I<1>  | I<0>
+INPUTP | 2 | 43 | 44
+EQ | 1 | 
+   Y<1> = !I<1> & I<0>;	// (1 pt, 2 inp)
+
+MACROCELL | 0 | 2 | Y<2>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | I<1>  | I<0>
+INPUTP | 2 | 43 | 44
+EQ | 1 | 
+   Y<2> = I<1> & !I<0>;	// (1 pt, 2 inp)
+
+MACROCELL | 0 | 3 | Y<3>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | I<1>  | I<0>
+INPUTP | 2 | 43 | 44
+EQ | 1 | 
+   Y<3> = I<1> & I<0>;	// (1 pt, 2 inp)
+
+PIN | I<0> | 64 | 16 | LVCMOS18 | 44 | 4 | 0 | 0 | 0 | 1 | 0 | 2 | 0 | 3
+PIN | I<1> | 64 | 16 | LVCMOS18 | 43 | 4 | 0 | 0 | 0 | 1 | 0 | 2 | 0 | 3
+PIN | Y<0> | 536871040 | 0 | LVCMOS18 | 5
+PIN | Y<1> | 536871040 | 0 | LVCMOS18 | 4
+PIN | Y<2> | 536871040 | 0 | LVCMOS18 | 3
+PIN | Y<3> | 536871040 | 0 | LVCMOS18 | 1

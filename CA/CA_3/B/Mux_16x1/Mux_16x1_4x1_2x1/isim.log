@@ -1,0 +1,34 @@
+ command line:
+   ./mohit_tb_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  64618
+
+Tue Oct 05 16:20:01 2021
+
+Total Line Count : 127
+
+ Elaboration time : 0.046875 sec.
+
+ Estimate current memory usage : 158.47 Meg. 
+
+ Total Signals          : 76
+ Total Nets             : 35
+ Total Signal Drivers   : 30
+ Total Blocks           : 10
+ Total Primitive Blocks : 8
+ Total Processes        : 33
+ Total Traceable Variables  : 19
+ Total Scalar Nets and Variables : 134
+ntrace select -o on -m / -l this 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Simulation time 0.140625 sec.
+
+ Estimate current memory usage : 164.106 Meg. 
+
+Tue Oct 05 17:56:16 2021
+

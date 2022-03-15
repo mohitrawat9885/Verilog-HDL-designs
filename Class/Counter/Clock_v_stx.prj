@@ -1,0 +1,3 @@
+verilog isim_temp "synchronous_counter.v"
+verilog isim_temp "Clock.v"
+verilog isim_temp "C:/Xilinx92i/verilog/src/glbl.v"

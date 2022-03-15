@@ -1,0 +1,63 @@
+xst -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -ifn mohit.xst -ofn mohit.syr
+ngdbuild -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -dd _ngo -i -p xa9500xl "mohit.ngc" mohit.ngd
+cpldfit -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper mohit.ngd
+XSLTProcess -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" mohit_build.xml
+tsim -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise mohit mohit.nga
+taengine -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -f mohit -w --format html1 -l F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/mohit_html/tim/timing_report.htm
+hprep6 -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -s IEEE1149 -i mohit
+xst -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -ifn mohit.xst -ofn mohit.syr
+ngdbuild -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -dd _ngo -i -p xa9500xl "mohit.ngc" mohit.ngd
+cpldfit -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper mohit.ngd
+XSLTProcess -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" mohit_build.xml
+tsim -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise mohit mohit.nga
+taengine -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -f mohit -w --format html1 -l F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/mohit_html/tim/timing_report.htm
+hprep6 -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -s IEEE1149 -i mohit
+xst -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -ifn mohit.xst -ofn mohit.syr
+ngdbuild -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -dd _ngo -i -p xa9500xl "mohit.ngc" mohit.ngd
+cpldfit -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper mohit.ngd
+XSLTProcess -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" mohit_build.xml
+tsim -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise mohit mohit.nga
+taengine -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -f mohit -w --format html1 -l F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/mohit_html/tim/timing_report.htm
+hprep6 -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -s IEEE1149 -i mohit
+xst -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -ifn mohit.xst -ofn mohit.syr
+ngdbuild -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -dd _ngo -i -p xa9500xl "mohit.ngc" mohit.ngd
+cpldfit -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper mohit.ngd
+XSLTProcess -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" mohit_build.xml
+tsim -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise mohit mohit.nga
+taengine -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -f mohit -w --format html1 -l F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/mohit_html/tim/timing_report.htm
+hprep6 -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -s IEEE1149 -i mohit
+xst -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -ifn mohit.xst -ofn mohit.syr
+ngdbuild -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -dd _ngo -i -p xa9500xl "mohit.ngc" mohit.ngd
+cpldfit -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper mohit.ngd
+XSLTProcess -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" mohit_build.xml
+tsim -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise mohit mohit.nga
+taengine -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -f mohit -w --format html1 -l F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/mohit_html/tim/timing_report.htm
+hprep6 -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -s IEEE1149 -i mohit
+xst -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -ifn mohit.xst -ofn mohit.syr
+ngdbuild -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -dd _ngo -i -p xa9500xl "mohit.ngc" mohit.ngd
+cpldfit -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper mohit.ngd
+XSLTProcess -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" mohit_build.xml
+tsim -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise mohit mohit.nga
+taengine -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -f mohit -w --format html1 -l F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/mohit_html/tim/timing_report.htm
+hprep6 -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -s IEEE1149 -i mohit
+xst -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -ifn mohit.xst -ofn mohit.syr
+ngdbuild -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -dd _ngo -i -p xa9500xl "mohit.ngc" mohit.ngd
+cpldfit -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper mohit.ngd
+XSLTProcess -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" mohit_build.xml
+tsim -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise mohit mohit.nga
+taengine -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -f mohit -w --format html1 -l F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/mohit_html/tim/timing_report.htm
+hprep6 -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -s IEEE1149 -i mohit
+xst -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -ifn mohit.xst -ofn mohit.syr
+ngdbuild -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -dd _ngo -i -p xa9500xl "mohit.ngc" mohit.ngd
+cpldfit -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper mohit.ngd
+XSLTProcess -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" mohit_build.xml
+tsim -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise mohit mohit.nga
+taengine -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -f mohit -w --format html1 -l F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/mohit_html/tim/timing_report.htm
+hprep6 -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -s IEEE1149 -i mohit
+xst -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -ifn mohit.xst -ofn mohit.syr
+ngdbuild -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -dd _ngo -i -p xa9500xl "mohit.ngc" mohit.ngd
+cpldfit -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper mohit.ngd
+XSLTProcess -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" mohit_build.xml
+tsim -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise mohit mohit.nga
+taengine -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -intstyle ise -f mohit -w --format html1 -l F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/mohit_html/tim/timing_report.htm
+hprep6 -ise "F:/ECE/HDL_Design/CA/CA_2/A/Full_Adder/Full_Adder/Full_Adder.ise" -s IEEE1149 -i mohit

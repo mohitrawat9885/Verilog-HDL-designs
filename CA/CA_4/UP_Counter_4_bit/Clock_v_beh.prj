@@ -1,0 +1,3 @@
+verilog work "UP_Counter_4_bit.v"
+verilog work "Clock.v"
+verilog work "C:/Xilinx92i/verilog/src/glbl.v"

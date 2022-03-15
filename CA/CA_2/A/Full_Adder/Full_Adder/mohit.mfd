@@ -1,0 +1,25 @@
+MDF Database:  version 1.0
+MDF_INFO | mohit | XA9536XL-15-VQ44
+MACROCELL | 1 | 1 | Cout_OBUF
+ATTRIBUTES | 264963 | 0
+INPUTS | 3 | Cin  | A  | B
+INPUTP | 3 | 42 | 44 | 45
+EQ | 3 | 
+   Cout = Cin & B
+	# Cin & A
+	# B & A;
+
+MACROCELL | 0 | 1 | S_OBUF
+ATTRIBUTES | 264963 | 0
+INPUTS | 3 | A  | Cin  | B
+INPUTP | 3 | 44 | 42 | 45
+EQ | 3 | 
+   !S = A
+	$ Cin & B
+	# !Cin & !B;
+
+PIN | Cin | 64 | 0 | N/A | 42 | 2 | 1 | 1 | 0 | 1
+PIN | B | 64 | 0 | N/A | 45 | 2 | 1 | 1 | 0 | 1
+PIN | A | 64 | 0 | N/A | 44 | 2 | 1 | 1 | 0 | 1
+PIN | Cout | 536871040 | 0 | N/A | 5
+PIN | S | 536871040 | 0 | N/A | 8

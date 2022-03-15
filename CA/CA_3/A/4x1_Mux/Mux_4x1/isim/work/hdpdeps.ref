@@ -1,0 +1,8 @@
+V3 7
+FL $XILINX/verilog/src/glbl.v 2007/05/19.02:52:56 J.36
+MO work/glbl FL $XILINX/verilog/src/glbl.v
+FL F:/ECE/HDL_Design/CA/CA_3/A/4x1_Mux/Mux_4x1/mohit.v 2021/10/05.16:25:41 J.36
+MO work/mohit FL F:/ECE/HDL_Design/CA/CA_3/A/4x1_Mux/Mux_4x1/mohit.v
+FL F:/ECE/HDL_Design/CA/CA_3/A/4x1_Mux/Mux_4x1/mohit_tb.v 2021/10/05.16:28:11 J.36
+MO work/mohit_tb FL F:/ECE/HDL_Design/CA/CA_3/A/4x1_Mux/Mux_4x1/mohit_tb.v \
+      MI mohit

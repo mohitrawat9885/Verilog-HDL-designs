@@ -1,0 +1,2 @@
+verilog work "NAND_GATE.v"
+verilog work "NAND_TB.v"

@@ -1,0 +1,7 @@
+xst -ise "F:/ECE/HDL_Design/Projects/AND_GATE/AND_GATE.ise" -intstyle ise -ifn AND_GATE.xst -ofn AND_GATE.syr
+ngdbuild -ise "F:/ECE/HDL_Design/Projects/AND_GATE/AND_GATE.ise" -intstyle ise -dd _ngo -i -p acr2 "AND_GATE.ngc" AND_GATE.ngd
+cpldfit -ise "F:/ECE/HDL_Design/Projects/AND_GATE/AND_GATE.ise" -intstyle ise -p xa2c*-*-* -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -inreg on -blkfanin 38 -pterms 28 -iostd LVCMOS18 -unused keeper -terminate keeper AND_GATE.ngd
+XSLTProcess -ise "F:/ECE/HDL_Design/Projects/AND_GATE/AND_GATE.ise" AND_GATE_build.xml
+tsim -ise "F:/ECE/HDL_Design/Projects/AND_GATE/AND_GATE.ise" -intstyle ise AND_GATE AND_GATE.nga
+taengine -ise "F:/ECE/HDL_Design/Projects/AND_GATE/AND_GATE.ise" -intstyle ise -f AND_GATE -w --format html1 -l F:/ECE/HDL_Design/Projects/AND_GATE/AND_GATE_html/tim/timing_report.htm
+hprep6 -ise "F:/ECE/HDL_Design/Projects/AND_GATE/AND_GATE.ise" -s IEEE1149 -i AND_GATE

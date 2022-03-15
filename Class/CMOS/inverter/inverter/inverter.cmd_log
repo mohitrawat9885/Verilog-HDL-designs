@@ -1,0 +1,17 @@
+xst -ise "D:/ECE/HDL_Design/Class/CMOS/inverter/inverter/inverter.ise" -intstyle ise -ifn inverter.xst -ofn inverter.syr
+xst -ise "D:/ECE/HDL_Design/Class/CMOS/inverter/inverter/inverter.ise" -intstyle ise -ifn inverter.xst -ofn inverter.syr
+xst -ise "D:/ECE/HDL_Design/Class/CMOS/inverter/inverter/inverter.ise" -intstyle ise -ifn inverter.xst -ofn inverter.syr
+xst -ise "D:/ECE/HDL_Design/Class/CMOS/inverter/inverter/inverter.ise" -intstyle ise -ifn inverter.xst -ofn inverter.syr
+xst -ise "D:/ECE/HDL_Design/Class/CMOS/inverter/inverter/inverter.ise" -intstyle ise -ifn inverter.xst -ofn inverter.syr
+xst -ise "D:/ECE/HDL_Design/Class/CMOS/inverter/inverter/inverter.ise" -intstyle ise -ifn inverter.xst -ofn inverter.syr
+xst -ise "D:/ECE/HDL_Design/Class/CMOS/inverter/inverter/inverter.ise" -intstyle ise -ifn inverter.xst -ofn inverter.syr
+xst -ise "D:/ECE/HDL_Design/Class/CMOS/inverter/inverter/inverter.ise" -intstyle ise -ifn inverter.xst -ofn inverter.syr
+ngdbuild -ise "D:/ECE/HDL_Design/Class/CMOS/inverter/inverter/inverter.ise" -intstyle ise -dd _ngo -i -p xa9500xl "inverter.ngc" inverter.ngd
+cpldfit -ise "D:/ECE/HDL_Design/Class/CMOS/inverter/inverter/inverter.ise" -intstyle ise -p xa95*xl-*-* -ofmt vhdl -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper inverter.ngd
+XSLTProcess -ise "D:/ECE/HDL_Design/Class/CMOS/inverter/inverter/inverter.ise" inverter_build.xml
+tsim -ise "D:/ECE/HDL_Design/Class/CMOS/inverter/inverter/inverter.ise" -intstyle ise inverter inverter.nga
+taengine -ise "D:/ECE/HDL_Design/Class/CMOS/inverter/inverter/inverter.ise" -intstyle ise -f inverter -w --format html1 -l D:/ECE/HDL_Design/Class/CMOS/inverter/inverter/inverter_html/tim/timing_report.htm
+hprep6 -ise "D:/ECE/HDL_Design/Class/CMOS/inverter/inverter/inverter.ise" -s IEEE1149 -i inverter
+xst -ise "D:/ECE/HDL_Design/Class/CMOS/inverter/inverter/inverter.ise" -intstyle ise -ifn inverter.xst -ofn inverter.syr
+xst -ise "D:/ECE/HDL_Design/Class/CMOS/inverter/inverter/inverter.ise" -intstyle ise -ifn inverter.xst -ofn inverter.syr
+xst -ise "D:/ECE/HDL_Design/Class/CMOS/inverter/inverter/inverter.ise" -intstyle ise -ifn inverter.xst -ofn inverter.syr

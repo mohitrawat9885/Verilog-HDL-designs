@@ -1,0 +1,93 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2007 Xilinx, Inc.
+// All Right Reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 9.2i
+//  \   \         Application : ISE
+//  /   /         Filename : m.ant
+// /___/   /\     Timestamp : Sun Oct 31 20:40:41 2021
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: 
+//Design Name: m
+//Device: Xilinx
+//
+`timescale 1ns/1ps
+
+module m;
+    reg A = 1'b0;
+    reg B = 1'b0;
+    wire S;
+    wire C;
+
+    parameter PERIOD = 200;
+    parameter real DUTY_CYCLE = 0.5;
+    parameter OFFSET = 100;
+
+    initial    // Clock process for A
+    begin
+        #OFFSET;
+        forever
+        begin
+            A = 1'b0;
+            #(PERIOD-(PERIOD*DUTY_CYCLE)) A = 1'b1;
+            #(PERIOD*DUTY_CYCLE);
+        end
+    end
+
+    Hald_Adder UUT (
+        .A(A),
+        .B(B),
+        .S(S),
+        .C(C));
+
+    integer TX_FILE = 0;
+    integer TX_ERROR = 0;
+    
+    initial begin    // Annotation process for clock A
+        #0;
+        ANNOTATE_S;
+        ANNOTATE_C;
+        #OFFSET;
+        forever begin
+            #115;
+            ANNOTATE_S;
+            ANNOTATE_C;
+            #85;
+        end
+    end
+
+    initial begin  // Open the annotations file...
+        TX_FILE = $fopen("F:\\ECE\\HDL_Design\\Projects\\Half_Hadder\\m.ano");
+        #1200 // Final time:  1200 ns
+        $display("Success! Annotation Simulation Complete.");
+        $fdisplay(TX_FILE, "Total[%d]", TX_ERROR);
+        $fclose(TX_FILE);
+        $finish;
+    end
+
+    initial begin
+    end
+
+    task ANNOTATE_S;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,S,%b]", $time, S);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+    task ANNOTATE_C;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,C,%b]", $time, C);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+endmodule
+

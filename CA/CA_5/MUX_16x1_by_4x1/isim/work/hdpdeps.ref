@@ -1,0 +1,12 @@
+V3 11
+FL $XILINX/verilog/src/glbl.v 2007/05/19.02:52:56 J.36
+MO work/glbl FL $XILINX/verilog/src/glbl.v
+FL D:/ECE/HDL_Design/CA/CA_5/MUX_16x1_by_4x1/Mux_16x1.v 2021/11/22.11:52:35 J.36
+FL D:/ECE/HDL_Design/CA/CA_5/MUX_16x1_by_4x1/Mux_16x1_TB.v 2021/11/22.12:05:29 J.36
+FL Z:/ECE/HDL_Design/CA/CA_5/MUX_16x1_by_4x1/Mux_16x1.v 2021/12/02.14:48:10 J.36
+MO work/Mux_4x1 FL Z:/ECE/HDL_Design/CA/CA_5/MUX_16x1_by_4x1/Mux_16x1.v
+MO work/Mux_16x1 \
+      FL Z:/ECE/HDL_Design/CA/CA_5/MUX_16x1_by_4x1/Mux_16x1.v MI Mux_4x1
+FL Z:/ECE/HDL_Design/CA/CA_5/MUX_16x1_by_4x1/Mux_16x1_TB.v 2021/11/22.12:52:32 J.36
+MO work/Mux_16x1_TB_v FL Z:/ECE/HDL_Design/CA/CA_5/MUX_16x1_by_4x1/Mux_16x1_TB.v \
+      MI Mux_16x1

@@ -1,0 +1,190 @@
+NDS Database:  version J.36
+
+NDS_INFO | acr2 | A2C32A44VQ | XA2C32A-6-VQ44
+
+DEVICE | A2C32A | A2C32A44VQ | 
+
+NETWORK | DeCoder_2_4 | 0 | 0 | 1073758214
+
+INPUT_INSTANCE | 0 | 0 | NULL | I<0>_II | DeCoder_2_4_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | I<0> | 156 | PI | 0 | 0 | DeCoder_2_4_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | I<0>_II/UIM | 162 | ? | 0 | 0 | DeCoder_2_4_COPY_0_COPY_0 | NULL | NULL | I<0>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | I<1>_II | DeCoder_2_4_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | I<1> | 157 | PI | 0 | 0 | DeCoder_2_4_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | I<1>_II/UIM | 161 | ? | 0 | 0 | DeCoder_2_4_COPY_0_COPY_0 | NULL | NULL | I<1>_II | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | NULL | Y<0>_MC | DeCoder_2_4_COPY_0_COPY_0 | 0 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | I<1>_II/UIM | 161 | ? | 0 | 0 | DeCoder_2_4_COPY_0_COPY_0 | NULL | NULL | I<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | I<0>_II/UIM | 162 | ? | 0 | 0 | DeCoder_2_4_COPY_0_COPY_0 | NULL | NULL | I<0>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Y<0>_MC.Q | 164 | ? | 0 | 0 | DeCoder_2_4_COPY_0_COPY_0 | NULL | Y<0>_MC.Q | Y<0>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | Y<0>_MC.SI | Y<0>_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | I<1>_II/UIM | 161 | ? | 0 | 0 | DeCoder_2_4_COPY_0_COPY_0 | NULL | NULL | I<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | I<0>_II/UIM | 162 | ? | 0 | 0 | DeCoder_2_4_COPY_0_COPY_0 | NULL | NULL | I<0>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Y<0>_MC.D1 | 159 | ? | 0 | 0 | Y<0>_MC | NULL | NULL | Y<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_FALSE | I<1>_II/UIM | IV_FALSE | I<0>_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Y<0>_MC.D2 | 160 | ? | 0 | 0 | Y<0>_MC | NULL | NULL | Y<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | Y<0>_MC.REG | Y<0>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Y<0>_MC.D | 158 | ? | 0 | 0 | Y<0>_MC | NULL | NULL | Y<0>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Y<0>_MC.Q | 163 | ? | 0 | 0 | Y<0>_MC | NULL | NULL | Y<0>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | Y<0> | DeCoder_2_4_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Y<0>_MC.Q | 164 | ? | 0 | 0 | DeCoder_2_4_COPY_0_COPY_0 | NULL | Y<0>_MC.Q | Y<0>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Y<0> | 165 | PO | 0 | 0 | DeCoder_2_4_COPY_0_COPY_0 | NULL | NULL | Y<0> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | Y<1>_MC | DeCoder_2_4_COPY_0_COPY_0 | 0 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | I<1>_II/UIM | 161 | ? | 0 | 0 | DeCoder_2_4_COPY_0_COPY_0 | NULL | NULL | I<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | I<0>_II/UIM | 162 | ? | 0 | 0 | DeCoder_2_4_COPY_0_COPY_0 | NULL | NULL | I<0>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Y<1>_MC.Q | 170 | ? | 0 | 0 | DeCoder_2_4_COPY_0_COPY_0 | NULL | Y<1>_MC.Q | Y<1>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | Y<1>_MC.SI | Y<1>_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | I<1>_II/UIM | 161 | ? | 0 | 0 | DeCoder_2_4_COPY_0_COPY_0 | NULL | NULL | I<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | I<0>_II/UIM | 162 | ? | 0 | 0 | DeCoder_2_4_COPY_0_COPY_0 | NULL | NULL | I<0>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Y<1>_MC.D1 | 167 | ? | 0 | 0 | Y<1>_MC | NULL | NULL | Y<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_FALSE | I<1>_II/UIM | IV_TRUE | I<0>_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Y<1>_MC.D2 | 168 | ? | 0 | 0 | Y<1>_MC | NULL | NULL | Y<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | Y<1>_MC.REG | Y<1>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Y<1>_MC.D | 166 | ? | 0 | 0 | Y<1>_MC | NULL | NULL | Y<1>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Y<1>_MC.Q | 169 | ? | 0 | 0 | Y<1>_MC | NULL | NULL | Y<1>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | Y<1> | DeCoder_2_4_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Y<1>_MC.Q | 170 | ? | 0 | 0 | DeCoder_2_4_COPY_0_COPY_0 | NULL | Y<1>_MC.Q | Y<1>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Y<1> | 171 | PO | 0 | 0 | DeCoder_2_4_COPY_0_COPY_0 | NULL | NULL | Y<1> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | Y<2>_MC | DeCoder_2_4_COPY_0_COPY_0 | 0 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | I<1>_II/UIM | 161 | ? | 0 | 0 | DeCoder_2_4_COPY_0_COPY_0 | NULL | NULL | I<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | I<0>_II/UIM | 162 | ? | 0 | 0 | DeCoder_2_4_COPY_0_COPY_0 | NULL | NULL | I<0>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Y<2>_MC.Q | 176 | ? | 0 | 0 | DeCoder_2_4_COPY_0_COPY_0 | NULL | Y<2>_MC.Q | Y<2>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | Y<2>_MC.SI | Y<2>_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | I<1>_II/UIM | 161 | ? | 0 | 0 | DeCoder_2_4_COPY_0_COPY_0 | NULL | NULL | I<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | I<0>_II/UIM | 162 | ? | 0 | 0 | DeCoder_2_4_COPY_0_COPY_0 | NULL | NULL | I<0>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Y<2>_MC.D1 | 173 | ? | 0 | 0 | Y<2>_MC | NULL | NULL | Y<2>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_TRUE | I<1>_II/UIM | IV_FALSE | I<0>_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Y<2>_MC.D2 | 174 | ? | 0 | 0 | Y<2>_MC | NULL | NULL | Y<2>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | Y<2>_MC.REG | Y<2>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Y<2>_MC.D | 172 | ? | 0 | 0 | Y<2>_MC | NULL | NULL | Y<2>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Y<2>_MC.Q | 175 | ? | 0 | 0 | Y<2>_MC | NULL | NULL | Y<2>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | Y<2> | DeCoder_2_4_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Y<2>_MC.Q | 176 | ? | 0 | 0 | DeCoder_2_4_COPY_0_COPY_0 | NULL | Y<2>_MC.Q | Y<2>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Y<2> | 177 | PO | 0 | 0 | DeCoder_2_4_COPY_0_COPY_0 | NULL | NULL | Y<2> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | NULL | Y<3>_MC | DeCoder_2_4_COPY_0_COPY_0 | 0 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | I<1>_II/UIM | 161 | ? | 0 | 0 | DeCoder_2_4_COPY_0_COPY_0 | NULL | NULL | I<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | I<0>_II/UIM | 162 | ? | 0 | 0 | DeCoder_2_4_COPY_0_COPY_0 | NULL | NULL | I<0>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Y<3>_MC.Q | 182 | ? | 0 | 0 | DeCoder_2_4_COPY_0_COPY_0 | NULL | Y<3>_MC.Q | Y<3>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | Y<3>_MC.SI | Y<3>_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | I<1>_II/UIM | 161 | ? | 0 | 0 | DeCoder_2_4_COPY_0_COPY_0 | NULL | NULL | I<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | I<0>_II/UIM | 162 | ? | 0 | 0 | DeCoder_2_4_COPY_0_COPY_0 | NULL | NULL | I<0>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Y<3>_MC.D1 | 179 | ? | 0 | 0 | Y<3>_MC | NULL | NULL | Y<3>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_TRUE | I<1>_II/UIM | IV_TRUE | I<0>_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Y<3>_MC.D2 | 180 | ? | 0 | 0 | Y<3>_MC | NULL | NULL | Y<3>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | Y<3>_MC.REG | Y<3>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Y<3>_MC.D | 178 | ? | 0 | 0 | Y<3>_MC | NULL | NULL | Y<3>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Y<3>_MC.Q | 181 | ? | 0 | 0 | Y<3>_MC | NULL | NULL | Y<3>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | Y<3> | DeCoder_2_4_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Y<3>_MC.Q | 182 | ? | 0 | 0 | DeCoder_2_4_COPY_0_COPY_0 | NULL | Y<3>_MC.Q | Y<3>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Y<3> | 183 | PO | 0 | 0 | DeCoder_2_4_COPY_0_COPY_0 | NULL | NULL | Y<3> | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | DeCoder_2_4_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | Y<0>_MC | 1 | NULL | 0 | Y<0> | 1 | 38 | 49152
+FBPIN | 2 | Y<1>_MC | 1 | NULL | 0 | Y<1> | 1 | 37 | 49152
+FBPIN | 3 | Y<2>_MC | 1 | NULL | 0 | Y<2> | 1 | 36 | 49152
+FBPIN | 4 | Y<3>_MC | 1 | NULL | 0 | Y<3> | 1 | 34 | 53248
+FBPIN | 5 | NULL | 0 | I<0>_II | 1 | NULL | 0 | 33 | 53248
+FBPIN | 6 | NULL | 0 | I<1>_II | 1 | NULL | 0 | 32 | 53248
+
+FB_INSTANCE | FOOBAR2_ | DeCoder_2_4_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | INPUTPINS_FOOBAR3_ | DeCoder_2_4_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR1_ | FOOBAR1__ctinst | DeCoder_2_4_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR2_ | FOOBAR2__ctinst | DeCoder_2_4_COPY_0_COPY_0 | 0 | 0 | 0
+
+PLA | FOOBAR1_ | 4
+PLA_TERM | 10 | 
+SPPTERM | 2 | IV_FALSE | I<1>_II/UIM | IV_FALSE | I<0>_II/UIM
+PLA_TERM | 13 | 
+SPPTERM | 2 | IV_FALSE | I<1>_II/UIM | IV_TRUE | I<0>_II/UIM
+PLA_TERM | 16 | 
+SPPTERM | 2 | IV_TRUE | I<1>_II/UIM | IV_FALSE | I<0>_II/UIM
+PLA_TERM | 19 | 
+SPPTERM | 2 | IV_TRUE | I<1>_II/UIM | IV_TRUE | I<0>_II/UIM
+
+BUSINFO | I<1:0> | 2 | 0 | 0 | I<0> | 1 | I<1> | 0
+BUSINFO | Y<3:0> | 4 | 0 | 1 | Y<0> | 3 | Y<1> | 2 | Y<2> | 1 | Y<3> | 0
+
+IOSTD | LVCMOS18
+I<0> | LVCMOS18
+I<1> | LVCMOS18
+Y<0> | LVCMOS18
+Y<1> | LVCMOS18
+Y<2> | LVCMOS18
+Y<3> | LVCMOS18
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 4 | I<0> | 33 | 5 | I<1> | 32
+
+FB_IMUX_INDEX | FOOBAR1_ | -1 | -1 | -1 | -1 | 4 | 5 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+

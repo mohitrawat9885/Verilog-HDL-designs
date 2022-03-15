@@ -1,0 +1,89 @@
+initial begin forever #5 I0  = ~I0; end
+initial begin forever #10 I1  = ~I1; end
+initial begin forever #20 I2  = ~I2; end
+initial begin forever #40 I3  = ~I3; end
+initial begin forever #80 I4  = ~I4; end
+initial begin forever #160 I5  = ~I5; end
+initial begin forever #320 I6  = ~I6; end
+initial begin forever #640 I7  = ~I7; end
+initial begin forever #1280 I8  = ~I8; end
+initial begin forever #2560 I9  = ~I9; end
+initial begin forever #5120 I10 = ~I10; end
+initial begin forever #10240 I11 = ~I11; end
+initial begin forever #20480 I12 = ~I12; end
+initial begin forever #40960 I13 = ~I13; end
+initial begin forever #81920 I14 = ~I14; end
+initial begin forever #163840 I15 = ~I15; end
+
+initial begin forever #327680 S0 = ~S0; end
+initial begin forever #655360 S1 = ~S1; end
+initial begin forever #1310720 S2 = ~S2; end
+initial begin forever #2621440 S3 = ~S3; end
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////// 16x1 MUX
+`timescale 1ns / 1ps
+
+module Mux_2x1(I1, I0, S, Out);
+input I1, I0, S;
+output Out;
+assign Out = ((~S)&I0)|(S&I1);
+endmodule
+
+module Mux_4x1(I3, I2, I1, I0, S1, S0, Out);
+input I3, I2, I1, I0, S1, S0;
+output Out;
+
+assign Out = ((~S0)&(~S1)&I0)|((~S0)&S1&I1)|(S0&(~S1)&I2)|(S0&S1&I3);
+endmodule
+
+
+module mohit(I15, I14, I13, I12, I11, I10, I9, I8, I7, I6, I5, I4, I3, I2, I1, I0,S3, S2, S1, S0, Out);
+input I15, I14, I13, I12, I11, I10, I9, I8, I7, I6, I5, I4, I3, I2, I1, I0, S3, S2, S1, S0;
+output Out;
+
+wire o1, o2, o3, o4, o5, o6;
+
+Mux_4x1 M41(I3, I2, I1, I0, S1, S0, o1);
+Mux_4x1 M42(I7, I6, I5, I4, S1, S0, o2);
+Mux_4x1 M43(I11,I10,I9, I8, S1, S0, o3);
+Mux_4x1 M44(I15,I14,I13,I12,S1, S0, o4);
+
+Mux_2x1 M21(o1, o2, S2, o5);
+Mux_2x1 M22(o3, o4, S2, o6);
+
+Mux_2x1 M23(o5, o6, S3, Out);
+
+endmodule
+
+
+
+
+
+
+////////////// TB 2
+`timescale 1ns / 1ps
+
+module mohit_tb();
+reg [0:15] I;
+reg [0:3] S;
+wire Out;
+
+mohit mux(I[15], I[14], I[13], I[12], I[11], I[10], I[9], I[8], I[7], I[6], I[5], I[4], I[3], I[2], I[1], I[0],
+						S[3], S[2], S[1], S[0], Out);
+initial
+	begin
+		S=4'b0000; I=16'b0000000000000000; #20;
+		S=4'b0000; I=16'b0000000000000001; #20;
+	end
+endmodule

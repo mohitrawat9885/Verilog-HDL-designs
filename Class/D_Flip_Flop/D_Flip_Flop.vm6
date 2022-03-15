@@ -1,0 +1,80 @@
+NDS Database:  version J.36
+
+NDS_INFO | acr2 | A2C32A44VQ | XA2C32A-6-VQ44
+
+DEVICE | A2C32A | A2C32A44VQ | 
+
+NETWORK | D_Flip_Flop | 0 | 0 | 1073758214
+
+INPUT_INSTANCE | 0 | 0 | NULL | D_II | D_Flip_Flop_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | D | 51 | PI | 0 | 0 | D_Flip_Flop_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | D_II/UIM | 55 | ? | 0 | 0 | D_Flip_Flop_COPY_0_COPY_0 | NULL | NULL | D_II | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | NULL | Q_MC | D_Flip_Flop_COPY_0_COPY_0 | 0 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | D_II/UIM | 55 | ? | 0 | 0 | D_Flip_Flop_COPY_0_COPY_0 | NULL | NULL | D_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | rst_II/UIM | 57 | ? | 0 | 0 | D_Flip_Flop_COPY_0_COPY_0 | NULL | NULL | rst_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | Q_MC.Q | 59 | ? | 0 | 0 | D_Flip_Flop_COPY_0_COPY_0 | NULL | Q_MC.Q | Q_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | Q_MC.SI | Q_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | D_II/UIM | 55 | ? | 0 | 0 | D_Flip_Flop_COPY_0_COPY_0 | NULL | NULL | D_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | rst_II/UIM | 57 | ? | 0 | 0 | D_Flip_Flop_COPY_0_COPY_0 | NULL | NULL | rst_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | Q_MC.D1 | 53 | ? | 0 | 0 | Q_MC | NULL | NULL | Q_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_TRUE | D_II/UIM | IV_FALSE | rst_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | Q_MC.D2 | 54 | ? | 0 | 0 | Q_MC | NULL | NULL | Q_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | Q_MC.REG | Q_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | Q_MC.D | 52 | ? | 0 | 0 | Q_MC | NULL | NULL | Q_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | Q_MC.Q | 58 | ? | 0 | 0 | Q_MC | NULL | NULL | Q_MC.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | rst_II | D_Flip_Flop_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | rst | 56 | PI | 0 | 0 | D_Flip_Flop_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | rst_II/UIM | 57 | ? | 0 | 0 | D_Flip_Flop_COPY_0_COPY_0 | NULL | NULL | rst_II | 0 | 5 | II_IMUX
+
+OUTPUT_INSTANCE | 0 | Q | D_Flip_Flop_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | Q_MC.Q | 59 | ? | 0 | 0 | D_Flip_Flop_COPY_0_COPY_0 | NULL | Q_MC.Q | Q_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | Q | 60 | PO | 0 | 0 | D_Flip_Flop_COPY_0_COPY_0 | NULL | NULL | Q | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | D_Flip_Flop_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | Q_MC | 1 | NULL | 0 | Q | 1 | 38 | 49152
+FBPIN | 2 | NULL | 0 | D_II | 1 | NULL | 0 | 37 | 49152
+FBPIN | 3 | NULL | 0 | rst_II | 1 | NULL | 0 | 36 | 49152
+
+FB_INSTANCE | FOOBAR2_ | D_Flip_Flop_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | INPUTPINS_FOOBAR3_ | D_Flip_Flop_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR1_ | FOOBAR1__ctinst | D_Flip_Flop_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR2_ | FOOBAR2__ctinst | D_Flip_Flop_COPY_0_COPY_0 | 0 | 0 | 0
+
+PLA | FOOBAR1_ | 1
+PLA_TERM | 10 | 
+SPPTERM | 2 | IV_TRUE | D_II/UIM | IV_FALSE | rst_II/UIM
+
+
+IOSTD | LVCMOS18
+D | LVCMOS18
+rst | LVCMOS18
+Q | LVCMOS18
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 1 | D | 37 | 2 | rst | 36
+
+FB_IMUX_INDEX | FOOBAR1_ | -1 | 1 | 2 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+

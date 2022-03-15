@@ -1,0 +1,3 @@
+MODULE mytb
+SUBMODULE Hald_Adder
+INSTANCE UUT

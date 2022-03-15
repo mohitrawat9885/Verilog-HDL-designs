@@ -1,0 +1,1 @@
+xst -ise "F:/ECE/HDL_Design/CA/CA_4/Down_Counter/Down_Counter.ise" -intstyle ise -ifn Down_Counter.xst -ofn Down_Counter.syr

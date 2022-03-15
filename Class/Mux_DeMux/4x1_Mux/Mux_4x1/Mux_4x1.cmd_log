@@ -1,0 +1,7 @@
+xst -ise "F:/ECE/HDL_Design/Class/Mux_DeMux/4x1_Mux/Mux_4x1/Mux_4x1.ise" -intstyle ise -ifn Mux_4x1.xst -ofn Mux_4x1.syr
+ngdbuild -ise "F:/ECE/HDL_Design/Class/Mux_DeMux/4x1_Mux/Mux_4x1/Mux_4x1.ise" -intstyle ise -dd _ngo -i -p acr2 "Mux_4x1.ngc" Mux_4x1.ngd
+cpldfit -ise "F:/ECE/HDL_Design/Class/Mux_DeMux/4x1_Mux/Mux_4x1/Mux_4x1.ise" -intstyle ise -p xa2c*-*-* -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -inreg on -blkfanin 38 -pterms 28 -iostd LVCMOS18 -unused keeper -terminate keeper Mux_4x1.ngd
+XSLTProcess -ise "F:/ECE/HDL_Design/Class/Mux_DeMux/4x1_Mux/Mux_4x1/Mux_4x1.ise" Mux_4x1_build.xml
+tsim -ise "F:/ECE/HDL_Design/Class/Mux_DeMux/4x1_Mux/Mux_4x1/Mux_4x1.ise" -intstyle ise Mux_4x1 Mux_4x1.nga
+taengine -ise "F:/ECE/HDL_Design/Class/Mux_DeMux/4x1_Mux/Mux_4x1/Mux_4x1.ise" -intstyle ise -f Mux_4x1 -w --format html1 -l F:/ECE/HDL_Design/Class/Mux_DeMux/4x1_Mux/Mux_4x1/Mux_4x1_html/tim/timing_report.htm
+hprep6 -ise "F:/ECE/HDL_Design/Class/Mux_DeMux/4x1_Mux/Mux_4x1/Mux_4x1.ise" -s IEEE1149 -i Mux_4x1

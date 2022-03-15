@@ -1,0 +1,7 @@
+V3 7
+FL $XILINX/verilog/src/glbl.v 2007/05/19.02:52:56 J.36
+MO isim_temp/glbl FL $XILINX/verilog/src/glbl.v
+FL F:/ECE/HDL_Design/CA/CA_1/main.v 2021/09/11.19:35:00 J.36
+MO isim_temp/main FL F:/ECE/HDL_Design/CA/CA_1/main.v
+FL F:/ECE/HDL_Design/CA/CA_1/main_tb.v 2021/09/11.19:22:35 J.36
+MO isim_temp/main_tb FL F:/ECE/HDL_Design/CA/CA_1/main_tb.v MI main

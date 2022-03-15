@@ -1,0 +1,38 @@
+ command line:
+   ./rawat_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  53092
+
+Tue Sep 28 18:45:58 2021
+
+Total Line Count : 78
+
+ Elaboration time : 0.015625 sec.
+
+ Estimate current memory usage : 157.884 Meg. 
+
+ Total Signals          : 18
+ Total Nets             : 16
+ Total Signal Drivers   : 11
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 14
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 98
+ntrace select -o on -n /rawat/Cout 
+ntrace select -o on -n /rawat/S 
+ntrace select -o on -n /rawat/A 
+ntrace select -o on -n /rawat/B 
+ntrace select -o on -n /rawat/Cin 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Simulation time 0.078125 sec.
+
+ Estimate current memory usage : 170.598 Meg. 
+
+Tue Sep 28 18:46:36 2021
+

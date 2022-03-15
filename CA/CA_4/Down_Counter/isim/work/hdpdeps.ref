@@ -1,0 +1,9 @@
+V3 9
+FL $XILINX/verilog/src/glbl.v 2007/05/19.02:52:56 J.36
+MO work/glbl FL $XILINX/verilog/src/glbl.v
+FL F:/ECE/HDL_Design/CA/CA_4/Down_Counter/Clock.v 2021/11/02.11:54:14 J.36
+MO work/Clock_v FL F:/ECE/HDL_Design/CA/CA_4/Down_Counter/Clock.v MI Down_Counter
+FL F:/ECE/HDL_Design/CA/CA_4/Down_Counter/Down_Counter.v 2021/11/02.11:50:19 J.36
+MO work/t_ff FL F:/ECE/HDL_Design/CA/CA_4/Down_Counter/Down_Counter.v
+MO work/Down_Counter \
+      FL F:/ECE/HDL_Design/CA/CA_4/Down_Counter/Down_Counter.v MI t_ff

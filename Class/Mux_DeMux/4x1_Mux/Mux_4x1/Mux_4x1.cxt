@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE Document [
+
+
+<!ELEMENT Document (Net*, Globals*, Lb+)>
+<!ATTLIST Document
+	Version CDATA #REQUIRED
+	Module CDATA #REQUIRED
+	Date CDATA #REQUIRED
+	Device CDATA #REQUIRED
+>
+
+<!ELEMENT Globals (InBuf*, GlblBuf*, ClkDiv*, SDot*)>
+
+<!ELEMENT Net (Activity?)>
+<!ATTLIST Net
+	NNm CDATA #REQUIRED
+	IoT (in | out | bidi | none) #REQUIRED
+	Loc CDATA #IMPLIED
+	ClkT (G | U) #IMPLIED
+	SNm CDATA #IMPLIED
+>
+
+<!ELEMENT Activity EMPTY>
+<!ATTLIST Activity
+	Freq CDATA #IMPLIED
+	DutyCycle CDATA #IMPLIED
+>
+
+
+
+<!ELEMENT InBuf (IPort, OPort*)>
+<!ATTLIST InBuf
+	Nm CDATA #REQUIRED
+	IOS (LVTTL | LVCMOS15 | LVCMOS18 | LVCMOS25 | LVCMOS33 | HSTL_I | SSTL2_I | SSTL3_I | STRIG) #REQUIRED
+	DataGate (Y | N) #REQUIRED
+>
+
+<!ELEMENT GlblBuf (IPort)>
+<!ATTLIST GlblBuf
+	Nm CDATA #REQUIRED
+	GType (GOE | GSR | GCK | GCK2 | CDRST | GDGATE) #REQUIRED
+>
+
+<!ELEMENT ClkDiv (IPort, OPort)>
+<!ATTLIST ClkDiv
+	Nm CDATA #REQUIRED
+	DivideBy (2 | 4 | 6 | 8 | 10 | 12 | 14 | 16) #REQUIRED
+>
+
+<!ELEMENT SDot (IPort, OPort)>
+<!ATTLIST SDot
+	Nm CDATA #REQUIRED
+>
+
+
+<!ELEMENT Lb (LbT*, Mc*, SDot*)>
+<!ATTLIST Lb
+	Nm CDATA #REQUIRED
+>
+
+<!ELEMENT LbT (OPort, IPort+)>
+<!ATTLIST LbT
+	Nm CDATA #REQUIRED
+	PtT (XBR_A | XBR_B | XBR_C | XBR_CT | XBR_CT_X) #REQUIRED
+>
+
+<!ELEMENT Mc (RMux*, ClkMux?, XorMux?, OeMux?, FbMux*, InBuf?, OutBuf?, DFlop?, Or?, SDot*)>
+<!ATTLIST Mc
+	Nm CDATA #REQUIRED
+>
+
+<!ELEMENT Or (OPort, IPort+)>
+<!ATTLIST Or
+	Nm CDATA #REQUIRED
+>
+
+<!ELEMENT ClkMux (IPort, OPort)>
+<!ATTLIST ClkMux
+	Nm CDATA #REQUIRED
+	Rate (1 | 2) #IMPLIED
+>
+
+<!ELEMENT RMux (IPort)>
+<!ATTLIST RMux
+	Nm CDATA #REQUIRED
+>
+
+<!ELEMENT OeMux (IPort)>
+<!ATTLIST OeMux
+	Nm CDATA #REQUIRED
+>
+
+<!ELEMENT XorMux (IPort)>
+<!ATTLIST XorMux
+	Nm CDATA #REQUIRED
+>
+
+<!ELEMENT FbMux (IPort)>
+<!ATTLIST FbMux
+	Nm CDATA #REQUIRED
+>
+
+<!ELEMENT OutBuf (IPort, OPort, CntlPort*)>
+<!ATTLIST OutBuf
+	Nm CDATA #REQUIRED
+	IOS (LVTTL | LVCMOS15 | LVCMOS18 | LVCMOS25 | LVCMOS33 | HSTL_I | SSTL2_I | SSTL3_I | STRIG) #REQUIRED
+>
+
+<!ELEMENT DFlop (FlopPort+)>
+<!ATTLIST DFlop
+	Nm CDATA #REQUIRED
+>
+
+
+<!ELEMENT FlopPort EMPTY>
+<!ATTLIST FlopPort
+	NNm CDATA #REQUIRED
+	Port (D | CLK | Q | RST | PST | CE) #REQUIRED
+>
+
+<!ELEMENT IPort EMPTY>
+<!ATTLIST IPort
+	NNm CDATA #REQUIRED
+>
+
+<!ELEMENT OPort EMPTY>
+<!ATTLIST OPort
+	NNm CDATA #REQUIRED
+>
+
+<!ELEMENT CntlPort EMPTY>
+<!ATTLIST CntlPort
+	NNm CDATA #REQUIRED
+>
+]>
+<Document Date="Oct 30 13:39:09 2021" Device="XA2C32A-6VQ44" Module="Mux_4x1" Version="2"><Net IoT="none" NNm="FB1_2_I" SNm="I&lt;0&gt;_II/UIM"/><Net IoT="none" NNm="FB1_3_I" SNm="I&lt;1&gt;_II/UIM"/><Net IoT="none" NNm="FB1_4_I" SNm="I&lt;2&gt;_II/UIM"/><Net IoT="none" NNm="FB1_5_I" SNm="I&lt;3&gt;_II/UIM"/><Net IoT="none" NNm="FB1_6_I" SNm="S&lt;0&gt;_II/UIM"/><Net IoT="none" NNm="FB1_7_I" SNm="S&lt;1&gt;_II/UIM"/><Net IoT="none" NNm="FB1_1_OR" SNm="Y_MC.Q"/><Net IoT="out" Loc="FB1_1" NNm="Y" SNm="Y"/><Net IoT="none" NNm="PT_GND" SNm="PT_GND"/><Net IoT="none" NNm="FB1_PT0" SNm="FB1_PT0"/><Net IoT="none" NNm="FB1_PT1" SNm="FB1_PT1"/><Net IoT="none" NNm="FB1_PT2" SNm="FB1_PT2"/><Net IoT="none" NNm="FB1_PT3" SNm="FB1_PT3"/><Net IoT="in" Loc="FB1_2" NNm="I&lt;0&gt;" SNm="I&lt;0&gt;"/><Net IoT="in" Loc="FB1_3" NNm="I&lt;1&gt;" SNm="I&lt;1&gt;"/><Net IoT="in" Loc="FB1_4" NNm="I&lt;2&gt;" SNm="I&lt;2&gt;"/><Net IoT="in" Loc="FB1_5" NNm="I&lt;3&gt;" SNm="I&lt;3&gt;"/><Net IoT="in" Loc="FB1_6" NNm="S&lt;0&gt;" SNm="S&lt;0&gt;"/><Net IoT="in" Loc="FB1_7" NNm="S&lt;1&gt;" SNm="S&lt;1&gt;"/><Globals/><Lb Nm="FB1"><LbT Nm="FB1_PT0" PtT="XBR_CT_X"><OPort NNm="FB1_PT0"/><IPort NNm="FB1_7_I"/><IPort NNm="FB1_5_I"/><IPort NNm="FB1_6_I"/></LbT><LbT Nm="FB1_PT1" PtT="XBR_CT_X"><OPort NNm="FB1_PT1"/><IPort NNm="FB1_7_I"/><IPort NNm="FB1_6_I"/><IPort NNm="FB1_4_I"/></LbT><LbT Nm="FB1_PT2" PtT="XBR_CT_X"><OPort NNm="FB1_PT2"/><IPort NNm="FB1_7_I"/><IPort NNm="FB1_6_I"/><IPort NNm="FB1_3_I"/></LbT><LbT Nm="FB1_PT3" PtT="XBR_CT_X"><OPort NNm="FB1_PT3"/><IPort NNm="FB1_7_I"/><IPort NNm="FB1_6_I"/><IPort NNm="FB1_2_I"/></LbT><Mc Nm="FB1_1"><InBuf DataGate="N" IOS="LVCMOS18" Nm="FB1_1_I"><IPort NNm="Y"/></InBuf><OutBuf IOS="LVCMOS18" Nm="FB1_1_O"><IPort NNm="FB1_1_OR"/><OPort NNm="Y"/><CntlPort NNm="PT_VCC"/></OutBuf><Or Nm="FB1_1_OR"><OPort NNm="FB1_1_OR"/><IPort NNm="FB1_PT0"/><IPort NNm="FB1_PT1"/><IPort NNm="FB1_PT2"/><IPort NNm="FB1_PT3"/></Or></Mc><Mc Nm="FB1_2"><FbMux Nm="FB1_2_P"><IPort NNm="FB1_2_I"/></FbMux><InBuf DataGate="N" IOS="LVCMOS18" Nm="FB1_2_I"><IPort NNm="I&lt;0&gt;"/><OPort NNm="FB1_2_I"/></InBuf></Mc><Mc Nm="FB1_3"><FbMux Nm="FB1_3_P"><IPort NNm="FB1_3_I"/></FbMux><InBuf DataGate="N" IOS="LVCMOS18" Nm="FB1_3_I"><IPort NNm="I&lt;1&gt;"/><OPort NNm="FB1_3_I"/></InBuf></Mc><Mc Nm="FB1_4"><FbMux Nm="FB1_4_P"><IPort NNm="FB1_4_I"/></FbMux><InBuf DataGate="N" IOS="LVCMOS18" Nm="FB1_4_I"><IPort NNm="I&lt;2&gt;"/><OPort NNm="FB1_4_I"/></InBuf></Mc><Mc Nm="FB1_5"><FbMux Nm="FB1_5_P"><IPort NNm="FB1_5_I"/></FbMux><InBuf DataGate="N" IOS="LVCMOS18" Nm="FB1_5_I"><IPort NNm="I&lt;3&gt;"/><OPort NNm="FB1_5_I"/></InBuf></Mc><Mc Nm="FB1_6"><FbMux Nm="FB1_6_P"><IPort NNm="FB1_6_I"/></FbMux><InBuf DataGate="N" IOS="LVCMOS18" Nm="FB1_6_I"><IPort NNm="S&lt;0&gt;"/><OPort NNm="FB1_6_I"/></InBuf></Mc><Mc Nm="FB1_7"><FbMux Nm="FB1_7_P"><IPort NNm="FB1_7_I"/></FbMux><InBuf DataGate="N" IOS="LVCMOS18" Nm="FB1_7_I"><IPort NNm="S&lt;1&gt;"/><OPort NNm="FB1_7_I"/></InBuf></Mc><Mc Nm="FB1_8"/><Mc Nm="FB1_9"/><Mc Nm="FB1_10"/><Mc Nm="FB1_11"/><Mc Nm="FB1_12"/><Mc Nm="FB1_13"/><Mc Nm="FB1_14"/><Mc Nm="FB1_15"/><Mc Nm="FB1_16"/></Lb><Lb Nm="FB2"><Mc Nm="FB2_1"/><Mc Nm="FB2_2"/><Mc Nm="FB2_3"/><Mc Nm="FB2_4"/><Mc Nm="FB2_5"/><Mc Nm="FB2_6"/><Mc Nm="FB2_7"/><Mc Nm="FB2_8"/><Mc Nm="FB2_9"/><Mc Nm="FB2_10"/><Mc Nm="FB2_11"/><Mc Nm="FB2_12"/><Mc Nm="FB2_13"/><Mc Nm="FB2_14"/><Mc Nm="FB2_15"/><Mc Nm="FB2_16"/></Lb></Document>

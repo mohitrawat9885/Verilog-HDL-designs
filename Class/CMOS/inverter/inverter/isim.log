@@ -1,0 +1,27 @@
+ command line:
+   ./inverter_tb_v_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  53017
+
+Mon Nov 15 09:21:42 2021
+
+Total Line Count : 48
+
+ Elaboration time : 0 sec.
+
+ Estimate current memory usage : 157.188 Meg. 
+
+ Total Signals          : 14
+ Total Nets             : 13
+ Total Signal Drivers   : 8
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 9
+ Total Traceable Variables  : 18
+ Total Scalar Nets and Variables : 93
+ntrace select -o on -m / -l this 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.

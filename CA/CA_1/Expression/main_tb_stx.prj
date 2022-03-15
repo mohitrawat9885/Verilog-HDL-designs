@@ -1,0 +1,2 @@
+verilog isim_temp "main_tb.v"
+verilog isim_temp "C:/Xilinx92i/verilog/src/glbl.v"

@@ -1,0 +1,7 @@
+V3 7
+FL $XILINX/verilog/src/glbl.v 2007/05/19.02:52:56 J.36
+MO isim_temp/glbl FL $XILINX/verilog/src/glbl.v
+FL F:/ECE/HDL_Design/Projects/AND_GATE/AND_GATE.v 2021/10/31.20:09:51 J.36
+MO isim_temp/AND_GATE FL F:/ECE/HDL_Design/Projects/AND_GATE/AND_GATE.v
+FL F:/ECE/HDL_Design/Projects/AND_GATE/TB.v 2021/10/31.20:11:38 J.36
+MO isim_temp/TB_v FL F:/ECE/HDL_Design/Projects/AND_GATE/TB.v MI AND_GATE

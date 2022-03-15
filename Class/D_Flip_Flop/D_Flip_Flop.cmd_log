@@ -1,0 +1,10 @@
+xst -ise "F:/ECE/HDL_Design/Class/D_Flip_Flop/D_Flip_Flop.ise" -intstyle ise -ifn D_Flip_Flop.xst -ofn D_Flip_Flop.syr
+xst -ise "F:/ECE/HDL_Design/Class/D_Flip_Flop/D_Flip_Flop.ise" -intstyle ise -ifn D_Flip_Flop.xst -ofn D_Flip_Flop.syr
+xst -ise "F:/ECE/HDL_Design/Class/D_Flip_Flop/D_Flip_Flop.ise" -intstyle ise -ifn D_Flip_Flop.xst -ofn D_Flip_Flop.syr
+xst -ise "F:/ECE/HDL_Design/Class/D_Flip_Flop/D_Flip_Flop.ise" -intstyle ise -ifn D_Flip_Flop.xst -ofn D_Flip_Flop.syr
+ngdbuild -ise "F:/ECE/HDL_Design/Class/D_Flip_Flop/D_Flip_Flop.ise" -intstyle ise -dd _ngo -i -p acr2 "D_Flip_Flop.ngc" D_Flip_Flop.ngd
+cpldfit -ise "F:/ECE/HDL_Design/Class/D_Flip_Flop/D_Flip_Flop.ise" -intstyle ise -p xa2c*-*-* -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -inreg on -blkfanin 38 -pterms 28 -iostd LVCMOS18 -unused keeper -terminate keeper D_Flip_Flop.ngd
+XSLTProcess -ise "F:/ECE/HDL_Design/Class/D_Flip_Flop/D_Flip_Flop.ise" D_Flip_Flop_build.xml
+tsim -ise "F:/ECE/HDL_Design/Class/D_Flip_Flop/D_Flip_Flop.ise" -intstyle ise D_Flip_Flop D_Flip_Flop.nga
+taengine -ise "F:/ECE/HDL_Design/Class/D_Flip_Flop/D_Flip_Flop.ise" -intstyle ise -f D_Flip_Flop -w --format html1 -l F:/ECE/HDL_Design/Class/D_Flip_Flop/D_Flip_Flop_html/tim/timing_report.htm
+hprep6 -ise "F:/ECE/HDL_Design/Class/D_Flip_Flop/D_Flip_Flop.ise" -s IEEE1149 -i D_Flip_Flop

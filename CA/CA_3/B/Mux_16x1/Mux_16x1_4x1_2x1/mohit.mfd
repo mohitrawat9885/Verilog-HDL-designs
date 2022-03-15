@@ -1,0 +1,89 @@
+MDF Database:  version 1.0
+MDF_INFO | mohit | XA9536XL-15-VQ44
+MACROCELL | 0 | 3 | Out_OBUF
+ATTRIBUTES | 264963 | 0
+INPUTS | 11 | S3  | I10  | S2  | S1  | S0  | I2  | I14  | I6  | I15  | EXP5_.EXP  | EXP6_.EXP
+INPUTMC | 2 | 0 | 2 | 0 | 4
+INPUTP | 9 | 27 | 47 | 1 | 11 | 25 | 31 | 44 | 45 | 33
+IMPORTS | 2 | 0 | 2 | 0 | 4
+EQ | 19 | 
+   Out = S3 & I15 & S2 & S1 & S0
+	# S3 & I14 & S2 & S1 & !S0
+	# S3 & I10 & !S2 & S1 & !S0
+	# !S3 & I6 & S2 & S1 & !S0
+	# !S3 & I2 & !S2 & S1 & !S0
+;Imported pterms FB1_3
+	# S3 & I11 & !S2 & S1 & S0
+	# S3 & !S2 & !S1 & S0 & I9
+	# !S3 & I7 & S2 & S1 & S0
+	# !S3 & I3 & !S2 & S1 & S0
+	# !S3 & I1 & !S2 & !S1 & S0
+;Imported pterms FB1_2
+	# !S3 & I4 & S2 & !S1 & !S0
+;Imported pterms FB1_5
+	# S3 & I12 & S2 & !S1 & !S0
+	# S3 & I8 & !S2 & !S1 & !S0
+	# S3 & S2 & I13 & !S1 & S0
+	# !S3 & I5 & S2 & !S1 & S0
+	# !S3 & I0 & !S2 & !S1 & !S0;
+
+MACROCELL | 0 | 1 | EXP4_
+ATTRIBUTES | 2049 | 0
+OUTPUTMC | 1 | 0 | 2
+INPUTS | 5 | S3  | I4  | S2  | S1  | S0
+INPUTP | 5 | 27 | 4 | 1 | 11 | 25
+EXPORTS | 1 | 0 | 2
+EQ | 1 | 
+       EXP4_.EXP  =  !S3 & I4 & S2 & !S1 & !S0
+
+MACROCELL | 0 | 2 | EXP5_
+ATTRIBUTES | 2049 | 0
+OUTPUTMC | 1 | 0 | 3
+INPUTS | 10 | S3  | I11  | S2  | S1  | S0  | I9  | I7  | I3  | I1  | EXP4_.EXP
+INPUTMC | 1 | 0 | 1
+INPUTP | 9 | 27 | 34 | 1 | 11 | 25 | 3 | 37 | 43 | 46
+EXPORTS | 1 | 0 | 3
+IMPORTS | 1 | 0 | 1
+EQ | 7 | 
+       EXP5_.EXP  =  S3 & I11 & !S2 & S1 & S0
+	# S3 & !S2 & !S1 & S0 & I9
+	# !S3 & I7 & S2 & S1 & S0
+	# !S3 & I3 & !S2 & S1 & S0
+	# !S3 & I1 & !S2 & !S1 & S0
+;Imported pterms FB1_2
+	# !S3 & I4 & S2 & !S1 & !S0
+
+MACROCELL | 0 | 4 | EXP6_
+ATTRIBUTES | 2049 | 0
+OUTPUTMC | 1 | 0 | 3
+INPUTS | 9 | S3  | I12  | S2  | S1  | S0  | I8  | I13  | I5  | I0
+INPUTP | 9 | 27 | 6 | 1 | 11 | 25 | 10 | 7 | 8 | 42
+EXPORTS | 1 | 0 | 3
+EQ | 5 | 
+       EXP6_.EXP  =  S3 & I12 & S2 & !S1 & !S0
+	# S3 & I8 & !S2 & !S1 & !S0
+	# S3 & S2 & I13 & !S1 & S0
+	# !S3 & I5 & S2 & !S1 & S0
+	# !S3 & I0 & !S2 & !S1 & !S0
+
+PIN | S3 | 64 | 0 | N/A | 27 | 4 | 0 | 3 | 0 | 1 | 0 | 2 | 0 | 4
+PIN | I15 | 64 | 0 | N/A | 33 | 1 | 0 | 3
+PIN | I14 | 64 | 0 | N/A | 44 | 1 | 0 | 3
+PIN | I10 | 64 | 0 | N/A | 47 | 1 | 0 | 3
+PIN | I12 | 64 | 0 | N/A | 6 | 1 | 0 | 4
+PIN | I8 | 64 | 0 | N/A | 10 | 1 | 0 | 4
+PIN | I11 | 64 | 0 | N/A | 34 | 1 | 0 | 2
+PIN | I7 | 64 | 0 | N/A | 37 | 1 | 0 | 2
+PIN | I3 | 64 | 0 | N/A | 43 | 1 | 0 | 2
+PIN | I5 | 64 | 0 | N/A | 8 | 1 | 0 | 4
+PIN | I1 | 64 | 0 | N/A | 46 | 1 | 0 | 2
+PIN | I6 | 64 | 0 | N/A | 45 | 1 | 0 | 3
+PIN | I2 | 64 | 0 | N/A | 31 | 1 | 0 | 3
+PIN | I4 | 64 | 0 | N/A | 4 | 1 | 0 | 1
+PIN | I0 | 64 | 0 | N/A | 42 | 1 | 0 | 4
+PIN | S2 | 64 | 0 | N/A | 1 | 4 | 0 | 3 | 0 | 1 | 0 | 2 | 0 | 4
+PIN | I13 | 64 | 0 | N/A | 7 | 1 | 0 | 4
+PIN | S1 | 64 | 0 | N/A | 11 | 4 | 0 | 3 | 0 | 1 | 0 | 2 | 0 | 4
+PIN | S0 | 64 | 0 | N/A | 25 | 4 | 0 | 3 | 0 | 1 | 0 | 2 | 0 | 4
+PIN | I9 | 64 | 0 | N/A | 3 | 1 | 0 | 2
+PIN | Out | 536871040 | 0 | N/A | 9
